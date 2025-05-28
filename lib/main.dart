@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'bloc/Character_Bloc/character_bloc.dart';
 import 'screens/splash_screen.dart';
 import 'screens/navigation_screen.dart';
 import 'themes/firefly_theme.dart';
@@ -17,14 +19,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'HSR Stats Calculator',
-      theme: FireflyTheme.theme,
-      debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
-      routes: {
-        '/navigation': (context) => const NavigationScreen(),
-      },
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => CharacterBloc(),
+        ),
+      ],child: MaterialApp(
+    title: 'HSR Stats Calculator',
+    theme: FireflyTheme.theme,
+    debugShowCheckedModeBanner: false,
+    home: const SplashScreen(),
+    routes: {
+    '/navigation': (context) => const NavigationScreen(),
+    },
+    ),
     );
   }
 }

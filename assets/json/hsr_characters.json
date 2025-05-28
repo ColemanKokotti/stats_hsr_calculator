@@ -1,0 +1,607 @@
+{
+  "characters": [
+    {
+      "id": "1001",
+      "name": "March 7th",
+      "rarity": 4,
+      "element": "Ice",
+      "path": "Preservation",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/8dc62f8005f347bd53b1f7c5b1383a76_8973750781255186299.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/1c5d7d80f3bb40209b7e40b9b6ba47b2_6551830906270156607.png"
+    },
+    {
+      "id": "1002",
+      "name": "Dan Heng",
+      "rarity": 4,
+      "element": "Wind",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/04c14e1d09e542b5ad9fcb2d0d9b2fcd_7982248550172509932.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/63c43f3b4f574d32b32a5b5b4a8e7a3f_5949896733481989966.png"
+    },
+    {
+      "id": "1003",
+      "name": "Himeko",
+      "rarity": 5,
+      "element": "Fire",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/e4b79ba87f3b43b8a7c2b39b7b7e7e7e_1234567890123456789.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6_1234567890123456789.png"
+    },
+    {
+      "id": "1004",
+      "name": "Welt",
+      "rarity": 5,
+      "element": "Imaginary",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/welt_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/welt_portrait.png"
+    },
+    {
+      "id": "1005",
+      "name": "Kafka",
+      "rarity": 5,
+      "element": "Lightning",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/kafka_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/kafka_portrait.png"
+    },
+    {
+      "id": "1006",
+      "name": "Silver Wolf",
+      "rarity": 5,
+      "element": "Quantum",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/silverwolf_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/silverwolf_portrait.png"
+    },
+    {
+      "id": "1007",
+      "name": "Arlan",
+      "rarity": 4,
+      "element": "Lightning",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/arlan_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/arlan_portrait.png"
+    },
+    {
+      "id": "1008",
+      "name": "Asta",
+      "rarity": 4,
+      "element": "Fire",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/asta_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/asta_portrait.png"
+    },
+    {
+      "id": "1009",
+      "name": "Herta",
+      "rarity": 4,
+      "element": "Ice",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/herta_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/herta_portrait.png"
+    },
+    {
+      "id": "1010",
+      "name": "Bronya",
+      "rarity": 5,
+      "element": "Wind",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/bronya_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/bronya_portrait.png"
+    },
+    {
+      "id": "1011",
+      "name": "Seele",
+      "rarity": 5,
+      "element": "Quantum",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/seele_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/seele_portrait.png"
+    },
+    {
+      "id": "1012",
+      "name": "Serval",
+      "rarity": 4,
+      "element": "Lightning",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/serval_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/serval_portrait.png"
+    },
+    {
+      "id": "1013",
+      "name": "Gepard",
+      "rarity": 5,
+      "element": "Ice",
+      "path": "Preservation",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/gepard_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/gepard_portrait.png"
+    },
+    {
+      "id": "1014",
+      "name": "Natasha",
+      "rarity": 4,
+      "element": "Physical",
+      "path": "Abundance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/natasha_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/natasha_portrait.png"
+    },
+    {
+      "id": "1015",
+      "name": "Pela",
+      "rarity": 4,
+      "element": "Ice",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/pela_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/pela_portrait.png"
+    },
+    {
+      "id": "1016",
+      "name": "Clara",
+      "rarity": 5,
+      "element": "Physical",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/clara_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/clara_portrait.png"
+    },
+    {
+      "id": "1017",
+      "name": "Sampo",
+      "rarity": 4,
+      "element": "Wind",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/sampo_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/sampo_portrait.png"
+    },
+    {
+      "id": "1018",
+      "name": "Hook",
+      "rarity": 4,
+      "element": "Fire",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/hook_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/hook_portrait.png"
+    },
+    {
+      "id": "1019",
+      "name": "Lynx",
+      "rarity": 4,
+      "element": "Quantum",
+      "path": "Abundance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/lynx_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/lynx_portrait.png"
+    },
+    {
+      "id": "1020",
+      "name": "Luka",
+      "rarity": 4,
+      "element": "Physical",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/luka_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/luka_portrait.png"
+    },
+    {
+      "id": "1021",
+      "name": "Topaz",
+      "rarity": 5,
+      "element": "Fire",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/topaz_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/topaz_portrait.png"
+    },
+    {
+      "id": "1022",
+      "name": "Guinaifen",
+      "rarity": 4,
+      "element": "Fire",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/guinaifen_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/guinaifen_portrait.png"
+    },
+    {
+      "id": "1101",
+      "name": "Bailu",
+      "rarity": 5,
+      "element": "Lightning",
+      "path": "Abundance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/bailu_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/bailu_portrait.png"
+    },
+    {
+      "id": "1102",
+      "name": "Yanqing",
+      "rarity": 5,
+      "element": "Ice",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/yanqing_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/yanqing_portrait.png"
+    },
+    {
+      "id": "1103",
+      "name": "Yukong",
+      "rarity": 4,
+      "element": "Imaginary",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/yukong_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/yukong_portrait.png"
+    },
+    {
+      "id": "1104",
+      "name": "Sushang",
+      "rarity": 4,
+      "element": "Physical",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/sushang_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/sushang_portrait.png"
+    },
+    {
+      "id": "1105",
+      "name": "Luocha",
+      "rarity": 5,
+      "element": "Imaginary",
+      "path": "Abundance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/luocha_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/luocha_portrait.png"
+    },
+    {
+      "id": "1106",
+      "name": "Jing Yuan",
+      "rarity": 5,
+      "element": "Lightning",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/jingyuan_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/jingyuan_portrait.png"
+    },
+    {
+      "id": "1107",
+      "name": "Blade",
+      "rarity": 5,
+      "element": "Wind",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/blade_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/blade_portrait.png"
+    },
+    {
+      "id": "1108",
+      "name": "Dan Heng • Imbibitor Lunae",
+      "rarity": 5,
+      "element": "Imaginary",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/danheng_il_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/danheng_il_portrait.png"
+    },
+    {
+      "id": "1109",
+      "name": "Fu Xuan",
+      "rarity": 5,
+      "element": "Quantum",
+      "path": "Preservation",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/fuxuan_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/fuxuan_portrait.png"
+    },
+    {
+      "id": "1201",
+      "name": "Qingque",
+      "rarity": 4,
+      "element": "Quantum",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/qingque_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/qingque_portrait.png"
+    },
+    {
+      "id": "1202",
+      "name": "Tingyun",
+      "rarity": 4,
+      "element": "Lightning",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/tingyun_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/tingyun_portrait.png"
+    },
+    {
+      "id": "1203",
+      "name": "Huohuo",
+      "rarity": 5,
+      "element": "Wind",
+      "path": "Abundance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/huohuo_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/huohuo_portrait.png"
+    },
+    {
+      "id": "1204",
+      "name": "Jingliu",
+      "rarity": 5,
+      "element": "Ice",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/jingliu_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/jingliu_portrait.png"
+    },
+    {
+      "id": "1205",
+      "name": "Argenti",
+      "rarity": 5,
+      "element": "Physical",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/argenti_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/argenti_portrait.png"
+    },
+    {
+      "id": "1206",
+      "name": "Ruan Mei",
+      "rarity": 5,
+      "element": "Ice",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/ruanmei_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/ruanmei_portrait.png"
+    },
+    {
+      "id": "1207",
+      "name": "Hanya",
+      "rarity": 4,
+      "element": "Physical",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/hanya_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/hanya_portrait.png"
+    },
+    {
+      "id": "1208",
+      "name": "Xueyi",
+      "rarity": 4,
+      "element": "Quantum",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/xueyi_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/xueyi_portrait.png"
+    },
+    {
+      "id": "1209",
+      "name": "Dr. Ratio",
+      "rarity": 5,
+      "element": "Imaginary",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/ratio_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/ratio_portrait.png"
+    },
+    {
+      "id": "1210",
+      "name": "Black Swan",
+      "rarity": 5,
+      "element": "Wind",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/blackswan_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/blackswan_portrait.png"
+    },
+    {
+      "id": "1211",
+      "name": "Sparkle",
+      "rarity": 5,
+      "element": "Quantum",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/sparkle_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/sparkle_portrait.png"
+    },
+    {
+      "id": "1212",
+      "name": "Misha",
+      "rarity": 4,
+      "element": "Ice",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/misha_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/misha_portrait.png"
+    },
+    {
+      "id": "1213",
+      "name": "Acheron",
+      "rarity": 5,
+      "element": "Lightning",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/acheron_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/acheron_portrait.png"
+    },
+    {
+      "id": "1214",
+      "name": "Aventurine",
+      "rarity": 5,
+      "element": "Imaginary",
+      "path": "Preservation",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/aventurine_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/aventurine_portrait.png"
+    },
+    {
+      "id": "1215",
+      "name": "Gallagher",
+      "rarity": 4,
+      "element": "Fire",
+      "path": "Abundance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/gallagher_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/gallagher_portrait.png"
+    },
+    {
+      "id": "1216",
+      "name": "Robin",
+      "rarity": 5,
+      "element": "Physical",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/robin_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/robin_portrait.png"
+    },
+    {
+      "id": "1217",
+      "name": "Boothill",
+      "rarity": 5,
+      "element": "Physical",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/boothill_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/boothill_portrait.png"
+    },
+    {
+      "id": "1218",
+      "name": "Firefly",
+      "rarity": 5,
+      "element": "Fire",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/firefly_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/firefly_portrait.png"
+    },
+    {
+      "id": "1219",
+      "name": "Jade",
+      "rarity": 5,
+      "element": "Quantum",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/jade_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/jade_portrait.png"
+    },
+    {
+      "id": "1220",
+      "name": "Yunli",
+      "rarity": 5,
+      "element": "Physical",
+      "path": "Destruction",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/yunli_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/yunli_portrait.png"
+    },
+    {
+      "id": "1221",
+      "name": "Jiaoqiu",
+      "rarity": 5,
+      "element": "Fire",
+      "path": "Nihility",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/jiaoqiu_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/jiaoqiu_portrait.png"
+    },
+    {
+      "id": "1222",
+      "name": "March 7th (Hunt)",
+      "rarity": 4,
+      "element": "Imaginary",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/march7th_hunt_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/march7th_hunt_portrait.png"
+    },
+    {
+      "id": "1223",
+      "name": "Moze",
+      "rarity": 4,
+      "element": "Lightning",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/moze_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/moze_portrait.png"
+    },
+    {
+      "id": "1224",
+      "name": "Feixiao",
+      "rarity": 5,
+      "element": "Wind",
+      "path": "Hunt",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/feixiao_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/feixiao_portrait.png"
+    },
+    {
+      "id": "1225",
+      "name": "Lingsha",
+      "rarity": 5,
+      "element": "Fire",
+      "path": "Abundance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/lingsha_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/lingsha_icon.png"
+    },
+    {
+      "id": "1226",
+      "name": "Rappa",
+      "rarity": 5,
+      "element": "Imaginary",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/rappa_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/rappa_portrait.png"
+    },
+    {
+      "id": "1301",
+      "name": "Sunday",
+      "rarity": 5,
+      "element": "Imaginary",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/sunday_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/sunday_portrait.png"
+    },
+    {
+      "id": "1302",
+      "name": "Aglaea",
+      "rarity": 5,
+      "element": "Lightning",
+      "path": "Remembrance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/aglaea_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/aglaea_portrait.png"
+    },
+    {
+      "id": "1303",
+      "name": "The Herta",
+      "rarity": 5,
+      "element": "Ice",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/the_herta_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/the_herta_portrait.png"
+    },
+    {
+      "id": "1304",
+      "name": "Trailblazer (Remembrance)",
+      "rarity": 5,
+      "element": "Ice",
+      "path": "Remembrance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/trailblazer_remembrance_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/trailblazer_remembrance_portrait.png"
+    },
+    {
+      "id": "1306",
+      "name": "Mydei",
+      "rarity": 5,
+      "element": "Imaginary",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/mydei_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/mydei_portrait.png"
+    },
+    {
+      "id": "1305",
+      "name": "Tribbie",
+      "rarity": 5,
+      "element": "Quantum",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/tribbie_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/tribbie_portrait.png"
+    },
+    {
+      "id": "1308",
+      "name": "Anaxa",
+      "rarity": 5,
+      "element": "Wind",
+      "path": "Erudition",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/anaxa_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/anaxa_portrait.png"
+    },
+    {
+      "id": "1307",
+      "name": "Castorice",
+      "rarity": 5,
+      "element": "Quantum",
+      "path": "Remembrance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/castorice_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/castorice_portrait.png"
+    },
+    {
+      "id": "1310",
+      "name": "Cipher",
+      "rarity": 5,
+      "element": "Quantum",
+      "path": "Harmony",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/cipher_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/cipher_portrait.png"
+    },
+    {
+      "id": "1309",
+      "name": "Hyacine",
+      "rarity": 5,
+      "element": "Wind",
+      "path": "Remembrance",
+      "icon": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/hyacine_icon.png",
+      "portrait": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/75276539/hyacine_portrait.png"
+    }
+  ]
+}

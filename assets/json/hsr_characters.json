@@ -6,6 +6,7 @@
       "rarity": 4,
       "element": "Ice",
       "path": "Preservation",
+      "faction": "Astral Express",
       "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL4jrX-MhOXwyaHsPH6zteB33gna1OyAAO2w&s",
       "portrait": "https://external-preview.redd.it/march-7ths-birthday-illustration-animated-version-v0-eXJrcGVtajIwN25lMfQnaX7k3iTUNzk-ucGfXOx6G6CjJVZOTUEJpPrpZOIU.png?format=pjpg&auto=webp&s=cc4413436156e0dd139c64c1e8fa7bc4ae411d03"
     },
@@ -15,6 +16,7 @@
       "rarity": 4,
       "element": "Wind",
       "path": "Hunt",
+      "faction": "Astral Express",
       "icon": "https://i.pinimg.com/736x/2a/ff/07/2aff0763d94e292ea09479a4a6f0ba50.jpg",
       "portrait": "https://m.media-amazon.com/images/I/71zWYaIcFtL._AC_UF894,1000_QL80_.jpg"
     },
@@ -24,6 +26,7 @@
       "rarity": 5,
       "element": "Fire",
       "path": "Erudition",
+      "faction": "Astral Express",
       "icon": "https://media.tenor.com/YV8F_w_elQ8AAAAe/himeko-honkai-star-rail.png",
       "portrait": "https://i.pinimg.com/736x/34/fa/53/34fa533bde0f2139daebb78041792e1c.jpg"
     },
@@ -33,6 +36,7 @@
       "rarity": 5,
       "element": "Imaginary",
       "path": "Nihility",
+      "faction": "Astral Express",
       "icon": "https://i.pinimg.com/736x/35/a4/9b/35a49beb24faa07cf26c34cb2b5cfd11.jpg",
       "portrait": "https://images5.alphacoders.com/131/1315682.jpg"
     },
@@ -42,6 +46,7 @@
       "rarity": 5,
       "element": "Lightning",
       "path": "Nihility",
+      "faction": "Stellaron Hunters",
       "icon": "https://s1.zerochan.net/Kafka.%28Honkai.Star.Rail%29.600.3884261.jpg",
       "portrait": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/45/Star_Rail_Countdown_7_Days_-_Kafka.jpg/revision/latest/scale-to-width-down/250?cb=20230420155601"
     },
@@ -51,6 +56,7 @@
       "rarity": 5,
       "element": "Quantum",
       "path": "Nihility",
+      "faction": "Stellaron Hunters",
       "icon": "https://i.pinimg.com/736x/dc/d4/fe/dcd4fe45134061794bf5c4f32969e51d.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxi1bVygtsirmWolxLRdWsqnMo4R_Q5gHWQ&s"
     },
@@ -60,6 +66,7 @@
       "rarity": 4,
       "element": "Lightning",
       "path": "Destruction",
+      "faction": "Herta Space Station",
       "icon": "https://i.pinimg.com/736x/9a/4d/29/9a4d29cf30683e249cfefb7ed56f0aab.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVeKsdjzZhxYey_haem_XoPFtao17j9LE9wg&s"
     },
@@ -69,6 +76,7 @@
       "rarity": 4,
       "element": "Fire",
       "path": "Harmony",
+      "faction": "Herta Space Station",
       "icon": "https://i.pinimg.com/736x/b6/0d/ae/b60dae98584f3bbca90aa8cfa2c9bd97.jpg",
       "portrait": "https://external-preview.redd.it/asta-is-so-pretty-art-by-%E9%95%9C%E5%A4%9Cvic-v0-r_ZczeEor_ZxGQNiJ1QSAI5F_0WsbE0imygjisPKmkc.jpg?auto=webp&s=74c5216836966d35de5c601c9bf7ee974bdbc07c"
     },
@@ -78,6 +86,7 @@
       "rarity": 4,
       "element": "Ice",
       "path": "Erudition",
+      "faction": "Herta Space Station",
       "icon": "https://i.pinimg.com/736x/0b/00/f5/0b00f50b867807d52943b08851f18704.jpg",
       "portrait": "https://static.wikia.nocookie.net/houkai-star-rail/images/b/b0/Artwork_Herta_2022-05-14.jpg/revision/latest/scale-to-width-down/250?cb=20230326141245"
     },
@@ -87,6 +96,7 @@
       "rarity": 5,
       "element": "Wind",
       "path": "Harmony",
+      "faction": "Silvermane Guards",
       "icon": "https://pbs.twimg.com/media/GBbl1hTbkAAdg2m?format=jpg&name=large",
       "portrait": "https://i.redd.it/uj38lb03fcva1.jpg"
     },
@@ -96,6 +106,7 @@
       "rarity": 5,
       "element": "Quantum",
       "path": "Hunt",
+      "faction": "Wildfire",
       "icon": "https://i.pinimg.com/736x/cc/80/10/cc8010b89fa62571c51b2c6a7128c82c.jpg",
       "portrait": "https://prompthero.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWs1WVRjeVl6WXlNQzAyWXpVekxUUXlPV0V0T0RrM015MWxaV1ExTURCaU0yRmxZek1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--49f01eeb5bd828378670c339fec8b2656443f272/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oUnlaWE5wZW1WZmRHOWZiR2x0YVhSYkIya0NBQWhwQWdBSU9ncHpZWFpsY25zSk9oTnpkV0p6WVcxd2JHVmZiVzlrWlVraUIyOXVCam9HUlZRNkNuTjBjbWx3VkRvT2FXNTBaWEpzWVdObFZEb01jWFZoYkdsMGVXbGYiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--d64c6859fe55cb0019b45a68c20ad12ab6309026/125534.jpeg"
     },
@@ -105,6 +116,7 @@
       "rarity": 4,
       "element": "Lightning",
       "path": "Erudition",
+      "faction": "Belobog",
       "icon": "https://i.pinimg.com/736x/e6/0f/cc/e60fcc3626f5ee8a2561f5ad08cf5663.jpg",
       "portrait": "https://i.pinimg.com/474x/a8/5b/e3/a85be3313d69593ed00e0a1973e230d8.jpg"
     },
@@ -114,6 +126,7 @@
       "rarity": 5,
       "element": "Ice",
       "path": "Preservation",
+      "faction": "Silvermane Guards",
       "icon": "https://preview.redd.it/official-2023-white-day-illustrations-feat-dan-heng-gepard-v0-84vonx52pmna1.jpg?width=640&crop=smart&auto=webp&s=ce2bc4ce803dfaa4a83706a258068d548a06b123",
       "portrait": "https://i.pinimg.com/originals/cf/1b/af/cf1baf19efaee3e1e12ccfed903b3fbd.jpg"
     },
@@ -123,6 +136,7 @@
       "rarity": 4,
       "element": "Physical",
       "path": "Abundance",
+      "faction": "Wildfire",
       "icon": "https://i.pinimg.com/474x/6f/0e/0f/6f0e0f01c974c532bd5dc97d14e6f59f.jpg",
       "portrait": "https://i.pinimg.com/736x/d7/7e/fd/d77efdf5e320eaa198259730a5267cde.jpg"
     },
@@ -132,6 +146,7 @@
       "rarity": 4,
       "element": "Ice",
       "path": "Nihility",
+      "faction": "Silvermane Guards",
       "icon": "https://i.pinimg.com/736x/0e/d4/23/0ed423baa4f7c72f5f6afeee1ff49707.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rOI4CPq6D2K-j98j2M0hXwyu3_wl70C9aQ&s"
     },
@@ -141,6 +156,7 @@
       "rarity": 5,
       "element": "Physical",
       "path": "Destruction",
+      "faction": "Belobog",
       "icon": "https://i.pinimg.com/736x/0c/a2/90/0ca290f6db09bedec2082cc3a4b6b03d.jpg",
       "portrait": "https://preview.redd.it/official-illustration-featuring-clara-svarog-to-celebrate-v0-y45ri39ebu8d1.png?width=640&crop=smart&auto=webp&s=3789c67aa9dc18853764711644d89370abd4e279"
     },
@@ -150,6 +166,7 @@
       "rarity": 4,
       "element": "Wind",
       "path": "Nihility",
+      "faction": "Masked Fools",
       "icon": "https://media.tenor.com/Nz11qYI3fJ0AAAAe/sampo-honkai-star-rail.png",
       "portrait": "https://i.pinimg.com/736x/3d/2d/14/3d2d14d3acf5e8e371eec2fbac32275f.jpg"
     },
@@ -159,6 +176,7 @@
       "rarity": 4,
       "element": "Fire",
       "path": "Destruction",
+      "faction": "Wildfire",
       "icon": "https://i.pinimg.com/736x/ae/f5/ee/aef5ee42fb642d5de482d01e0227f688.jpg",
       "portrait": "https://i.pinimg.com/736x/17/a4/df/17a4dfd4501f264fe3b254d809164a6c.jpg"
     },
@@ -168,6 +186,7 @@
       "rarity": 4,
       "element": "Quantum",
       "path": "Abundance",
+      "faction": "Silvermane Guards",
       "icon": "https://i.pinimg.com/736x/6a/f6/80/6af6803eab1eeb675db9427b78563b9a.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMrbadIsDAFN4J4xHQSL1SDCTa9JN1ZLE2AQ&s"
     },
@@ -177,6 +196,7 @@
       "rarity": 4,
       "element": "Physical",
       "path": "Nihility",
+      "faction": "Wildfire",
       "icon": "https://i.pinimg.com/736x/05/44/da/0544da8c0327975335e312e68f9eb91b.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_z0iooNiAgCtjbqucPgtaHdPebSrIu0dHpA&s"
     },
@@ -186,6 +206,7 @@
       "rarity": 5,
       "element": "Fire",
       "path": "Hunt",
+      "faction": "IPC",
       "icon": "https://i.pinimg.com/736x/52/7f/0c/527f0cfc93e038ea1b067548e4d8c69b.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStlo9JRToNEDli68JyehXC6QDtEdvNqWicgg&s"
     },
@@ -195,6 +216,7 @@
       "rarity": 4,
       "element": "Fire",
       "path": "Nihility",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/736x/a2/aa/3f/a2aa3ffc2685cc449afbfe98a4c638f9.jpg",
       "portrait": "https://external-preview.redd.it/wabusVgR9J9-LvsBtF-nXgL7ZVi8OygvjcPJswFNQsA.jpg?auto=webp&s=148c85cf4e28bb097312b32cfd567365fd790ad1"
     },
@@ -204,6 +226,7 @@
       "rarity": 5,
       "element": "Lightning",
       "path": "Abundance",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/736x/37/8e/bd/378ebd205504a159fed53500a6d009b1.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjR53jFNsAzK6pFbNSzOBOdpazg4A02vpPEQ&s"
     },
@@ -213,6 +236,7 @@
       "rarity": 5,
       "element": "Ice",
       "path": "Hunt",
+      "faction": "Xianzhou Luofu",
       "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp1VBlxxrUpBMQjvKY7oTJc8ZKMsxBg9vY2w&s",
       "portrait": "https://preview.redd.it/yanqing-art-by-zizhisan-v0-2fg95aecy7xa1.jpg?width=640&crop=smart&auto=webp&s=aa3707a39487e702d4eec9a447b2fa6140f1673e"
     },
@@ -222,6 +246,7 @@
       "rarity": 4,
       "element": "Imaginary",
       "path": "Harmony",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/474x/40/29/69/4029693de37637ef967a9aa46722eb4f.jpg",
       "portrait": "https://i.ytimg.com/vi/Z3UdF0hf7NQ/maxresdefault.jpg"
     },
@@ -231,6 +256,7 @@
       "rarity": 4,
       "element": "Physical",
       "path": "Hunt",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/736x/21/fd/32/21fd320fcded36866b7b06f88fbfac82.jpg",
       "portrait": "https://external-preview.redd.it/wabusVgR9J9-LvsBtF-nXgL7ZVi8OygvjcPJswFNQsA.jpg?auto=webp&s=148c85cf4e28bb097312b32cfd567365fd790ad1"
     },
@@ -240,6 +266,7 @@
       "rarity": 5,
       "element": "Imaginary",
       "path": "Abundance",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/736x/4f/0a/44/4f0a44dfe8747e8a33d1245afedbe501.jpg",
       "portrait": "https://preview.redd.it/official-illustration-featuring-luocha-dan-heng-to-v0-l22798hmth7b1.jpg?auto=webp&s=6ac7e3230d8c89f95c0128ce8fe706a71738927e"
     },
@@ -249,6 +276,7 @@
       "rarity": 5,
       "element": "Lightning",
       "path": "Erudition",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/736x/be/ed/91/beed912c0d14b19d89428b894b0c2284.jpg",
       "portrait": "https://i.ytimg.com/vi/hrb0Kh7yfQg/sddefault.jpg"
     },
@@ -258,6 +286,7 @@
       "rarity": 5,
       "element": "Wind",
       "path": "Destruction",
+      "faction": "Stellaron Hunters",
       "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5NLxst3G9xGBBbRJ3GRnq3lemd7I19mzVpg&s",
       "portrait": "https://preview.redd.it/new-official-artwork-of-blade-v0-5hmizwmcpr5d1.jpeg?auto=webp&s=350cc0a5f5014c852d7879c3a53cb58fd306fbb9"
     },
@@ -267,6 +296,7 @@
       "rarity": 5,
       "element": "Imaginary",
       "path": "Destruction",
+      "faction": "Astral Express",
       "icon": "https://i.pinimg.com/736x/4c/55/49/4c5549704b9c34f47f443628ece4ce76.jpg",
       "portrait": "https://i.pinimg.com/736x/18/bc/e6/18bce63e501e95520ea4d0d96c829bab.jpg"
     },
@@ -276,6 +306,7 @@
       "rarity": 5,
       "element": "Quantum",
       "path": "Preservation",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/736x/89/89/47/898947581d971f38c169f25f3f702ca0.jpg",
       "portrait": "https://i.pinimg.com/736x/75/ea/76/75ea761d3dd24c2681485a73e0a8dcad.jpg"
     },
@@ -285,6 +316,7 @@
       "rarity": 4,
       "element": "Quantum",
       "path": "Erudition",
+      "faction": "Xianzhou Luofu",
       "icon": "https://64.media.tumblr.com/84ab210707291fef14deb67b56a93f90/3d8c2d648c97e33f-14/s540x810/7a23a29a64271dd2811f44765aee94aa72dd278b.png",
       "portrait": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/48/Valentine%27s_Day_2023_Qingque.jpg/revision/latest/scale-to-width-down/250?cb=20230301001321"
     },
@@ -294,6 +326,7 @@
       "rarity": 4,
       "element": "Lightning",
       "path": "Harmony",
+      "faction": "Xianzhou Luofu",
       "icon": "https://preview.redd.it/tingyun-icon-by-me-v0-fsiirn6uem5b1.png?auto=webp&s=324cca62372679760f375a63563bef7c2d5ca4aa",
       "portrait": "https://preview.redd.it/i-dont-believe-that-this-character-next-to-tingyun-tingyuns-v0-nv7pc6cuvsea1.png?width=640&crop=smart&auto=webp&s=1cead3328f9a37a008c18f0328106993f110a887"
     },
@@ -303,6 +336,7 @@
       "rarity": 5,
       "element": "Wind",
       "path": "Abundance",
+      "faction": "Ten-Lords Commission",
       "icon": "https://i.pinimg.com/736x/4b/95/b1/4b95b1a26b798a49c09af4807f4e7127.jpg",
       "portrait": "https://images3.alphacoders.com/134/1341955.jpeg"
     },
@@ -312,6 +346,7 @@
       "rarity": 5,
       "element": "Ice",
       "path": "Destruction",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/736x/84/9a/6d/849a6d901030682a82b8348c0c4c031b.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy_R1ZPT1rm1LhLdCizT1ouSkFymcs9750ww&s"
     },
@@ -321,6 +356,7 @@
       "rarity": 5,
       "element": "Physical",
       "path": "Erudition",
+      "faction": "Knights of Beauty",
       "icon": "https://i.pinimg.com/736x/2e/fc/f9/2efcf9e911f0a8c011c25f9ff796aa77.jpg",
       "portrait": "https://pbs.twimg.com/media/GApKAxNW8AAN9Fd.png"
     },
@@ -330,6 +366,7 @@
       "rarity": 5,
       "element": "Ice",
       "path": "Harmony",
+      "faction": "Genius Society",
       "icon": "https://i.pinimg.com/736x/8a/08/3a/8a083a0df82012f13d518b5b7a180387.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU3y9gqMdC39wjZFRSBw9-GNEQmJNHz7v_lA&s"
     },
@@ -339,6 +376,7 @@
       "rarity": 4,
       "element": "Physical",
       "path": "Harmony",
+      "faction": "Ten-Lords Commission",
       "icon": "https://i.pinimg.com/736x/d1/27/0a/d1270ace0448a5efc48b9b510b88cbef.jpg",
       "portrait": "https://static.zerochan.net/Honkai.Star.Rail.full.4069801.jpg"
     },
@@ -348,6 +386,7 @@
       "rarity": 4,
       "element": "Quantum",
       "path": "Destruction",
+      "faction": "Ten-Lords Commission",
       "icon": "https://i.pinimg.com/736x/69/c1/7f/69c17f18c8e0522c32cebc6d494309dd.jpg",
       "portrait": "https://static.zerochan.net/Honkai.Star.Rail.full.4069801.jpg"
     },
@@ -357,6 +396,7 @@
       "rarity": 5,
       "element": "Imaginary",
       "path": "Hunt",
+      "faction": "Genius Society",
       "icon": "https://i.pinimg.com/736x/d7/78/7d/d7787d7ed5ad88c3cb1a55f1787b6827.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRBJD2oDXUQOSDrTm5jDsnw5gkpw1zhqU-Vg&s"
     },
@@ -366,6 +406,7 @@
       "rarity": 5,
       "element": "Wind",
       "path": "Nihility",
+      "faction": "Memokeeper",
       "icon": "https://i.pinimg.com/736x/cc/25/96/cc25968cf6a49e258569f7e983c2aefa.jpg",
       "portrait": "https://images8.alphacoders.com/135/1353557.jpeg"
     },
@@ -375,6 +416,7 @@
       "rarity": 5,
       "element": "Quantum",
       "path": "Harmony",
+      "faction": "Masked Fools",
       "icon": "https://pbs.twimg.com/media/GZlHOywWgAMI-We.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRckAjXunOWdZ3tdCu5sxBt0tArTPCTp_AwyQ&s"
     },
@@ -384,6 +426,7 @@
       "rarity": 4,
       "element": "Ice",
       "path": "Destruction",
+      "faction": "Astral Express",
       "icon": "https://i.pinimg.com/736x/89/52/81/8952818ad586d67f2de6afb0dfd0ac0a.jpg",
       "portrait": "https://pbs.twimg.com/media/GBS5MnbaUAAjslB?format=jpg&name=large"
     },
@@ -393,6 +436,7 @@
       "rarity": 5,
       "element": "Lightning",
       "path": "Nihility",
+      "faction": "Galaxy Rangers",
       "icon": "https://i.pinimg.com/736x/06/c6/44/06c6449487cc5acc7db0b6c596fb4569.jpg",
       "portrait": "https://i.pinimg.com/736x/36/0a/77/360a777e141e7d5b092ca5d20e6bba70.jpg"
     },
@@ -402,6 +446,7 @@
       "rarity": 5,
       "element": "Imaginary",
       "path": "Preservation",
+      "faction": "IPC",
       "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVK3X3anCKF-7_ZlOs0BabPvpCim16JlwkHQ&s",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuXSRG7c_FszKiE25VmkfyAweEHfeqv7IODg&s"
     },
@@ -411,6 +456,7 @@
       "rarity": 4,
       "element": "Fire",
       "path": "Abundance",
+      "faction": "Penacony-Familys",
       "icon": "https://i.pinimg.com/736x/0c/c9/13/0cc9130ae6e4eea98458b631bcce4c34.jpg",
       "portrait": "https://i.pinimg.com/736x/47/09/f2/4709f2a07aad42abe1e0b02e7255ef99.jpg"
     },
@@ -420,6 +466,7 @@
       "rarity": 5,
       "element": "Physical",
       "path": "Harmony",
+      "faction": "Penacony-Familys",
       "icon": "https://i.pinimg.com/736x/11/5e/b9/115eb9d1ff5a8d32c9000d3ec418d014.jpg",
       "portrait": "https://static.zerochan.net/Robin.%28Honkai.Star.Rail%29.full.4136701.jpg"
     },
@@ -429,6 +476,7 @@
       "rarity": 5,
       "element": "Physical",
       "path": "Hunt",
+      "faction": "Galaxy Rangers",
       "icon": "https://i.pinimg.com/736x/fc/f4/7c/fcf47cb732e9f08643979cd8bf3d5a36.jpg",
       "portrait": "https://i.pinimg.com/736x/93/fe/f5/93fef59fd3cf7a5435dcf4ee6497af5f.jpg"
     },
@@ -438,6 +486,7 @@
       "rarity": 5,
       "element": "Fire",
       "path": "Destruction",
+      "faction": "Stellaron Hunters",
       "icon": "https://i.pinimg.com/736x/f9/0d/b0/f90db037ebf9f38cd60a45038369f98a.jpg",
       "portrait": "https://s1.zerochan.net/Firefly.%28Honkai.Star.Rail%29.600.4126795.jpg"
     },
@@ -447,6 +496,7 @@
       "rarity": 5,
       "element": "Quantum",
       "path": "Erudition",
+      "faction": "IPC",
       "icon": "https://i.pinimg.com/736x/a7/9f/a4/a79fa437c095921b27492c1980165f0b.jpg",
       "portrait": "https://i.pinimg.com/736x/4e/d0/86/4ed086996aaf7fbc622e8fb2d5767ec9.jpg"
     },
@@ -456,6 +506,7 @@
       "rarity": 5,
       "element": "Physical",
       "path": "Destruction",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/736x/85/ed/02/85ed02518f666dea362e62862c4bae35.jpg",
       "portrait": "https://i.pinimg.com/236x/ec/1c/13/ec1c1370909d2766e9a2b94063aab9b6.jpg"
     },
@@ -465,6 +516,7 @@
       "rarity": 5,
       "element": "Fire",
       "path": "Nihility",
+      "faction": "Xianzhou Yaoqing",
       "icon": "https://i.pinimg.com/736x/d4/de/e7/d4dee775f6697fbebdb90cc6500abd72.jpg",
       "portrait": "https://i.pinimg.com/736x/11/4b/47/114b47ec129456893d72a181177ad47b.jpg"
     },
@@ -474,6 +526,7 @@
       "rarity": 4,
       "element": "Imaginary",
       "path": "Hunt",
+      "faction": "Astral Express",
       "icon": "https://i.pinimg.com/736x/cf/8b/4b/cf8b4bf6548120179964ba4853a2cd1a.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8B91h4D4gb91igffxgLwHnLCZn-WGc7qD0rrM4IxYDDAiH4fEjjFmToHkzS2t-ZGlv8Y&usqp=CAU"
     },
@@ -483,6 +536,7 @@
       "rarity": 4,
       "element": "Lightning",
       "path": "Hunt",
+      "faction": "Xianzhou Yaoqing",
       "icon": "https://i.pinimg.com/736x/a5/9e/99/a59e99ee1ef05ce81d246e5d7d248da2.jpg",
       "portrait": "https://i.pinimg.com/236x/10/e0/f7/10e0f721800b839acd22d7311871575a.jpg"
     },
@@ -492,6 +546,7 @@
       "rarity": 5,
       "element": "Wind",
       "path": "Hunt",
+      "faction": "Xianzhou Yaoqing",
       "icon": "https://i.pinimg.com/736x/ea/aa/70/eaaa70aa37b1fa06bb71ba147b24907e.jpg",
       "portrait": "https://i.pinimg.com/736x/66/64/63/66646342b3149056fec3222b9149809e.jpg"
     },
@@ -501,6 +556,7 @@
       "rarity": 5,
       "element": "Fire",
       "path": "Abundance",
+      "faction": "Xianzhou Luofu",
       "icon": "https://i.pinimg.com/736x/18/cb/66/18cb66dc5ff9a13f8e7adba04c9e9ede.jpg",
       "portrait": "https://i.pinimg.com/236x/b9/c6/fd/b9c6fdb9a5e5dc547486355bb8141a8e.jpg"
     },
@@ -510,6 +566,7 @@
       "rarity": 5,
       "element": "Imaginary",
       "path": "Erudition",
+      "faction": "Galaxy Rangers",
       "icon": "https://i.pinimg.com/736x/59/ba/b5/59bab534ef5a97d44d790da0642ac1d9.jpg",
       "portrait": "https://i.pinimg.com/736x/c4/e9/04/c4e90445a10d2d55b2ea8c99e1b46894.jpg"
     },
@@ -519,6 +576,7 @@
       "rarity": 5,
       "element": "Imaginary",
       "path": "Harmony",
+      "faction": "Penacony-Familys",
       "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnM3FqnWcQrcndjWqeLOge8QPKMu58QPfeBw&s",
       "portrait": "https://pbs.twimg.com/media/GdgcLfJXwAAL8Cw?format=jpg&name=large"
     },
@@ -528,6 +586,7 @@
       "rarity": 5,
       "element": "Lightning",
       "path": "Remembrance",
+      "faction": "Chrysos Heirs",
       "icon": "https://i.pinimg.com/736x/04/ce/ac/04ceacd79a4fdd5d7f70cdf4a2400b74.jpg",
       "portrait": "https://preview.redd.it/chibi-aglaea-v0-djcxd5dsbi8e1.png?width=640&crop=smart&auto=webp&s=950bfdef6f477ca6db73a3bbe628e90534fb6864"
     },
@@ -537,6 +596,7 @@
       "rarity": 5,
       "element": "Ice",
       "path": "Erudition",
+      "faction": "Genius Society",
       "icon": "https://i.pinimg.com/236x/08/38/78/0838788674332b393575b095a9e2fff6.jpg",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeY21f6a7HtQ8miINaVU5Ju88QqvGimuuyww&s"
     },
@@ -546,6 +606,7 @@
       "rarity": 5,
       "element": "Ice",
       "path": "Remembrance",
+      "faction": "Astral Express",
       "icon": "https://media.tenor.com/3SGHOF42Jb0AAAAe/trailblazer-raccoon.png",
       "portrait": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_uQxmzsb2YQxKeSZB0rHtMs1PjCtTUt5XQ&s"
     },
@@ -555,6 +616,7 @@
       "rarity": 5,
       "element": "Imaginary",
       "path": "Destruction",
+      "faction": "Chrysos Heirs",
       "icon": "https://preview.redd.it/mydei-chibi-v0-hglwvvv1tdce1.png?auto=webp&s=ca5f3304867f8e054e43f661ff4dd338f93978c4",
       "portrait": "https://preview.redd.it/mydei-v0-5pqkmqriws2e1.jpeg?auto=webp&s=963c9531650da47c9823429802091d9113e61ebc"
     },
@@ -564,6 +626,7 @@
       "rarity": 5,
       "element": "Quantum",
       "path": "Harmony",
+      "faction": "Chrysos Heirs",
       "icon": "https://s1.zerochan.net/Tribbie.600.4390791.jpg",
       "portrait": "https://i.pinimg.com/236x/e9/d5/de/e9d5defaaf0d3dd8667f98ff495ab77d.jpg"
     },
@@ -573,6 +636,7 @@
       "rarity": 5,
       "element": "Wind",
       "path": "Erudition",
+      "faction": "Chrysos Heirs",
       "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhb5N8EF7H8O0KFJtJvdlPJc-4aKP796wPw&s",
       "portrait": "https://pbs.twimg.com/media/Gh5JKUia0AAR5XT?format=jpg&name=large"
     },
@@ -582,6 +646,7 @@
       "rarity": 5,
       "element": "Quantum",
       "path": "Remembrance",
+      "faction": "Chrysos Heirs",
       "icon": "https://pbs.twimg.com/media/Gh_soana8AAnTU_?format=jpg&name=large",
       "portrait": "https://i.pinimg.com/236x/b1/62/0a/b1620aa3118323a083d984944660b111.jpg"
     },
@@ -591,6 +656,7 @@
       "rarity": 5,
       "element": "Quantum",
       "path": "Nihility",
+      "faction": "Chrysos Heirs",
       "icon": "https://pbs.twimg.com/profile_images/1909138727340838912/NIAwlzIf_200x200.jpg",
       "portrait": "https://pbs.twimg.com/profile_images/1911168586241937408/fID81--0_400x400.jpg"
     },
@@ -600,6 +666,7 @@
       "rarity": 5,
       "element": "Wind",
       "path": "Remembrance",
+      "faction": "Chrysos Heirs",
       "icon": "https://preview.redd.it/hyacine-bp-icon-v0-a1upcim6r01f1.jpeg?width=640&crop=smart&auto=webp&s=53b71229254a96ee2928bd2e626e08140211c41d",
       "portrait": "https://pbs.twimg.com/profile_images/1879709721583886336/OUNlAAZL_400x400.jpg"
     }

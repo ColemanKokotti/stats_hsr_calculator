@@ -131,7 +131,7 @@ class FilterDialogsWidget extends StatelessWidget {
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
                         decoration: BoxDecoration(
-                          color: ChararcterAssets.getElementColor(element),
+                          color: ChararcterAssets.getFactionColor(element),
                           shape: BoxShape.circle,
                         ),
                       );
@@ -139,7 +139,7 @@ class FilterDialogsWidget extends StatelessWidget {
                   )
                       : Container(
                     decoration: BoxDecoration(
-                      color: ChararcterAssets.getElementColor(element),
+                      color: ChararcterAssets.getFactionColor(element),
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -191,7 +191,7 @@ class FilterDialogsWidget extends StatelessWidget {
                 ),
               ...paths.map((path) => ListTile(
                 title: Text(path, style: TextStyle(color: FireflyTheme.white)),
-                leading: Container(
+                leading: SizedBox(
                   width: 24,
                   height: 24,
                   child: ChararcterAssets.hasPathIcon(path)

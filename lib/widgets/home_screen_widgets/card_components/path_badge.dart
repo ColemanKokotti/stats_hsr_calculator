@@ -33,8 +33,8 @@ class PathBadge extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           SizedBox(
-            width: 20,
-            height: 20,
+            width: 16,
+            height: 16,
             child: _buildPathIcon(pathColor, hasIcon),
           ),
           const SizedBox(width: 6),

@@ -8,6 +8,7 @@ class Character {
   final String pathName;
   final String element;
   final int rarity;
+  final String faction;
   final bool isFavorite;
 
   const Character({
@@ -19,6 +20,7 @@ class Character {
     required this.pathName,
     required this.element,
     required this.rarity,
+    required this.faction,
     this.isFavorite = false,
   });
 
@@ -31,6 +33,7 @@ class Character {
     String? pathName,
     String? element,
     int? rarity,
+    String? faction,
     bool? isFavorite,
   }) {
     return Character(
@@ -42,6 +45,7 @@ class Character {
       pathName: pathName ?? this.pathName,
       element: element ?? this.element,
       rarity: rarity ?? this.rarity,
+      faction: faction ?? this.faction,
       isFavorite: isFavorite ?? this.isFavorite,
     );
   }
@@ -56,6 +60,7 @@ class Character {
       pathName: json['path'] ?? '',
       element: json['element'] ?? '',
       rarity: json['rarity'] ?? 4,
+      faction: json['faction'] ?? '',
       isFavorite: false,
     );
   }
@@ -70,6 +75,7 @@ class Character {
       'path': pathName,  // Salva come path
       'element': element,
       'rarity': rarity,
+      'faction': faction,
       'isFavorite': isFavorite,
     };
   }
@@ -85,6 +91,6 @@ class Character {
 
   @override
   String toString() {
-    return 'Character(id: $id, name: $name, pathName: $pathName, element: $element, rarity: $rarity, isFavorite: $isFavorite)';
+    return 'Character(id: $id, name: $name, pathName: $pathName, element: $element, rarity: $rarity, faction: $faction, isFavorite: $isFavorite)';
   }
 }

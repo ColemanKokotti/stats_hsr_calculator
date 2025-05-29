@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'character_model.dart';
 
@@ -19,8 +20,12 @@ class ApiService {
             try {
               characters.add(Character.fromJson(item));
             } catch (e) {
-              print('Error parsing character: $e');
-              print('Character data: $item');
+              if (kDebugMode) {
+                print('Error parsing character: $e');
+              }
+              if (kDebugMode) {
+                print('Character data: $item');
+              }
             }
           }
         }
@@ -31,8 +36,12 @@ class ApiService {
             try {
               characters.add(Character.fromJson(item));
             } catch (e) {
-              print('Error parsing character: $e');
-              print('Character data: $item');
+              if (kDebugMode) {
+                print('Error parsing character: $e');
+              }
+              if (kDebugMode) {
+                print('Character data: $item');
+              }
             }
           }
         }

@@ -16,7 +16,6 @@ class FireflyTheme {
   static const Color _turquoiseDark = Color(0xFF478F8D); // Darker turquoise for shadows
   static const Color _mint = Color(0xFFA8E1D2); // Mint green
   static const Color _blue = Color(0xFF71BDC7); // Light blue accents
-  static const Color _skin = Color(0xFFFBE7E4); // Light skin tone
   static const Color _crystal = Color(0xFFB3ECDF); // Crystal green effects
   static const Color _crystalHighlight = Color(0xFFD0F5EC); // Brighter crystal highlight
   static const Color _lightPurple = Color(0xFFB4A8CD); // Light purple for details
@@ -32,55 +31,55 @@ class FireflyTheme {
   static Color get turquoiseDark => _turquoiseDark;
 
   // Gradients refined to match Firefly's aesthetic
-  static LinearGradient get hairGradient => LinearGradient(
+  static LinearGradient get hairGradient => const LinearGradient(
     colors: [_hair, _hairShadow, _hair],
-    stops: const [0.0, 0.6, 1.0],
+    stops: [0.0, 0.6, 1.0],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
 
-  static LinearGradient get jacketGradient => LinearGradient(
+  static LinearGradient get jacketGradient => const LinearGradient(
     colors: [_jacket, _darkPurple],
     begin: Alignment.centerLeft,
     end: Alignment.centerRight,
   );
 
-  static LinearGradient get outfitGradient => LinearGradient(
+  static LinearGradient get outfitGradient => const LinearGradient(
     colors: [_turquoise, _mint, _crystal],
-    stops: const [0.0, 0.5, 1.0],
+    stops: [0.0, 0.5, 1.0],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
-  static LinearGradient get skirtGradient => LinearGradient(
+  static LinearGradient get skirtGradient => const LinearGradient(
     colors: [_turquoiseDark, _turquoise, _mint],
-    stops: const [0.0, 0.5, 1.0],
+    stops: [0.0, 0.5, 1.0],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
 
-  static LinearGradient get eyesGradient => LinearGradient(
+  static LinearGradient get eyesGradient => const LinearGradient(
     colors: [_eyes, _eyesHighlight],
     begin: Alignment.bottomCenter,
     end: Alignment.topCenter,
   );
 
-  static LinearGradient get crystalGradient => LinearGradient(
+  static LinearGradient get crystalGradient => const LinearGradient(
     colors: [_crystal, _crystalHighlight, _mint],
-    stops: const [0.0, 0.5, 1.0],
+    stops: [0.0, 0.5, 1.0],
     begin: Alignment.centerLeft,
     end: Alignment.centerRight,
   );
 
-  static LinearGradient get goldGradient => LinearGradient(
+  static LinearGradient get goldGradient => const LinearGradient(
     colors: [_gold, _goldHighlight],
     begin: Alignment.bottomLeft,
     end: Alignment.topRight,
   );
 
-  static LinearGradient get backgroundGradient => LinearGradient(
+  static LinearGradient get backgroundGradient => const LinearGradient(
     colors: [_black, _jacket, _darkPurple],
-    stops: const [0.0, 0.5, 1.0],
+    stops: [0.0, 0.5, 1.0],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
@@ -91,7 +90,7 @@ class FireflyTheme {
     end: Alignment.bottomRight,
   );
 
-  static LinearGradient get buttonGradient => LinearGradient(
+  static LinearGradient get buttonGradient => const LinearGradient(
     colors: [_turquoise, _blue],
     begin: Alignment.centerLeft,
     end: Alignment.centerRight,
@@ -134,7 +133,7 @@ class FireflyTheme {
       scaffoldBackgroundColor: _turquoise, // Explicitly set scaffold background
 
       // App bar theme
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         backgroundColor: _hair, // App bar color is now hair color
         foregroundColor: _white,
         elevation: 0,
@@ -150,7 +149,7 @@ class FireflyTheme {
       ),
 
       // Navigation bar theme
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: _turquoiseDark, // Bottom bar color is now darker turquoise
         selectedItemColor: _gold,
         unselectedItemColor: _jacket,
@@ -170,12 +169,12 @@ class FireflyTheme {
           side: BorderSide(color: _gold.withOpacity(0.3), width: 1),
         ),
         color: Colors.transparent,
-        margin: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+        margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
         shadowColor: _black.withOpacity(0.4),
       ),
 
       // Text theme
-      textTheme: TextTheme(
+      textTheme: const TextTheme(
         displayLarge: TextStyle(color: _white, fontWeight: FontWeight.bold),
         displayMedium: TextStyle(color: _white, fontWeight: FontWeight.bold),
         displaySmall: TextStyle(color: _white, fontWeight: FontWeight.bold),
@@ -315,19 +314,19 @@ class FireflyTheme {
         thumbColor: _gold,
         overlayColor: _gold.withOpacity(0.2),
         valueIndicatorColor: _jacket,
-        valueIndicatorTextStyle: TextStyle(color: _white),
+        valueIndicatorTextStyle: const TextStyle(color: _white),
       ),
 
       // Checkbox theme
       checkboxTheme: CheckboxThemeData(
-        fillColor: MaterialStateProperty.resolveWith((states) {
-          if (states.contains(MaterialState.selected)) {
+        fillColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
             return _turquoise;
           }
           return _darkPurple;
         }),
-        checkColor: MaterialStateProperty.all(_white),
-        side: BorderSide(color: _turquoise, width: 1.5),
+        checkColor: WidgetStateProperty.all(_white),
+        side: const BorderSide(color: _turquoise, width: 1.5),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
       ),
 
@@ -339,12 +338,12 @@ class FireflyTheme {
           borderRadius: BorderRadius.circular(16),
           side: BorderSide(color: _gold.withOpacity(0.5), width: 1),
         ),
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
           color: _gold,
           fontSize: 20,
           fontWeight: FontWeight.bold,
         ),
-        contentTextStyle: TextStyle(
+        contentTextStyle: const TextStyle(
           color: _white,
           fontSize: 16,
         ),
@@ -356,15 +355,15 @@ class FireflyTheme {
         disabledColor: _darkPurple.withOpacity(0.3),
         selectedColor: _turquoise,
         secondarySelectedColor: _gold,
-        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-        labelStyle: TextStyle(color: _white),
-        secondaryLabelStyle: TextStyle(color: _black),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+        labelStyle: const TextStyle(color: _white),
+        secondaryLabelStyle: const TextStyle(color: _black),
         brightness: Brightness.dark,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
 
       // Progress indicator theme
-      progressIndicatorTheme: ProgressIndicatorThemeData(
+      progressIndicatorTheme: const ProgressIndicatorThemeData(
         color: _turquoise,
         linearTrackColor: _darkPurple,
         circularTrackColor: _darkPurple,

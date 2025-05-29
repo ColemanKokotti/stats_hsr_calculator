@@ -47,6 +47,31 @@ class ChararcterAssets {
     'remembrance': 0xFF74C0FC
   };
 
+  static const Map<String, int> factionColor ={
+    'chrysos heirs': 0xFFFFD700,
+    'astral express': 0xFF4A90E2,
+    'genius society': 0xFF9B59B6,
+    'penacony-familys': 0xFFE74C3C,
+    'galaxy rangers': 0xFF2ECC71,
+    'xianzhou luofu': 0xFFF39C12,
+    'xianzhou yaoqing': 0xFFD35400,
+    'ipc': 0xFF34495E,
+    'stellaron hunters': 0xFF8E44AD,
+    'masked fools': 0xFFE67E22,
+    'memokeeper': 0xFF3498DB,
+    'ten-lords commission': 0xFFC0392B,
+    'knights of beauty': 0xFFF1C40F,
+    'silvermane guards': 0xFF95A5A6,
+    'wildfire': 0xFFE74C3C,
+    'belobog': 0xFFECF0F1,
+    'unknown' : 0xFF2C3E50 ,
+  };
+
+  static Color getFactionColor(String faction) {
+    final colorValue = factionColor[faction.toLowerCase()] ?? factionColor['unknown']!;
+    return Color(colorValue);
+  }
+
   // Metodi helper per ottenere il path dell'icona
   static String getElementIcon(String element) {
     return elementIcons[element.toLowerCase()] ?? elementIcons['physical']!;

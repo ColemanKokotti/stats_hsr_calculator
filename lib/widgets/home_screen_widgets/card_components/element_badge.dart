@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../../data/character_feature.dart';
 import '../../../data/character_rarity.dart';
 
-
 class ElementBadge extends StatelessWidget {
   final String element;
 
@@ -18,17 +17,17 @@ class ElementBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
       decoration: BoxDecoration(
-        color: elementColor.withValues(alpha: 0.3),
+        color: elementColor.withOpacity(0.3),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: elementColor.withValues(alpha: 0.3),
+          color: elementColor.withOpacity(0.5),
           width: 1,
         ),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Container(
+          SizedBox(
             width: 20,
             height: 20,
             child: _buildElementIcon(elementColor),

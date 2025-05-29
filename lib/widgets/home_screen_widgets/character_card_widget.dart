@@ -5,7 +5,6 @@ import 'card_components/character_badges.dart';
 import 'card_components/character_image.dart';
 import 'card_components/character_info.dart';
 
-
 class CharacterCard extends StatelessWidget {
   final Character character;
   final VoidCallback? onTap;
@@ -41,8 +40,9 @@ class CharacterCard extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 12),
-                // Badge Path ed Elemento
+                // Badge Path ed Elemento - con spazio flessibile
                 CharacterBadges(character: character),
+                const SizedBox(height: 8), // Spazio extra per evitare sovrapposizioni
               ],
             ),
           ),

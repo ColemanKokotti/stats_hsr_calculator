@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../bloc/Character_Bloc/character_bloc.dart';
-import '../../../bloc/Character_Bloc/character_event.dart';
 import '../../../data/character_model.dart';
 import '../../../themes/firefly_theme.dart';
 import 'favorite_button.dart';

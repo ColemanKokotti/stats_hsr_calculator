@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:help_project/widgets/home_screen_widgets/card_components/faction_badge.dart';
 import '../../../data/character_model.dart';
 import 'path_badge.dart';
 import 'element_badge.dart';
@@ -13,18 +14,21 @@ class CharacterBadges extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: PathBadge(
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          PathBadge(
             pathName: character.pathName,
           ),
-        ),
-        const SizedBox(width: 8),
-        ElementBadge(
-          element: character.element,
-        ),
-      ],
+          const SizedBox(width: 6),
+          FactionBadge(faction: character.faction),
+          const SizedBox(width: 6),
+          ElementBadge(
+            element: character.element,
+          ),
+        ],
+      ),
     );
   }
 }

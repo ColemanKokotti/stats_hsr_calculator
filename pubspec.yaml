@@ -49,9 +49,11 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/json/
+    - assets/json/hsr_characters.json
     - assets/images/roll-firefly.gif
     - assets/images/icon-app.png
+    - assets/icons/element_icons/
+    - assets/icons/path_icons/
 
 flutter_launcher_icons:
   android: "launcher_icon"

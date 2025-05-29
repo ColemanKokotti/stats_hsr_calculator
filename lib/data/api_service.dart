@@ -1,88 +1,81 @@
 import 'dart:convert';
-import 'package:http/http.dart' as http;
+import 'package:flutter/services.dart' show rootBundle;
 import 'character_model.dart';
 
-
 class ApiService {
-  static const String baseUrl = 'https://api.hakush.in/hsr';
-  static const Duration timeout = Duration(seconds: 10);
-
   static Future<List<Character>> getCharacters() async {
     try {
-      final response = await http
-          .get(
-        Uri.parse('$baseUrl/character'),
-        headers: {'Content-Type': 'application/json'},
-      )
-          .timeout(timeout);
+      // Load the JSON file from assets
+      final String response = await rootBundle.loadString('assets/json/hsr_characters.json');
+      final data = json.decode(response);
 
-      if (response.statusCode == 200) {
-        final data = json.decode(response.body);
+      List<Character> characters = [];
 
-        // L'API restituisce un oggetto con chiavi che sono gli ID dei personaggi
-        if (data is Map<String, dynamic>) {
-          List<Character> characters = [];
-
-          data.forEach((key, value) {
-            if (value is Map<String, dynamic>) {
-              try {
-                // Aggiungiamo l'id dal key se non è presente nei dati
-                value['id'] = key;
-                characters.add(Character.fromJson(value));
-              } catch (e) {
-                print('Error parsing character $key: $e');
-              }
+      // Handle different JSON structures
+      if (data is List) {
+        // If the JSON is directly an array of characters
+        for (var item in data) {
+          if (item is Map<String, dynamic>) {
+            try {
+              characters.add(Character.fromJson(item));
+            } catch (e) {
+              print('Error parsing character: $e');
+              print('Character data: $item');
             }
-          });
-
-          // Ordiniamo per rarità (decrescente) e poi per nome
-          characters.sort((a, b) {
-            int rarityComparison = b.rarity.compareTo(a.rarity);
-            if (rarityComparison != 0) return rarityComparison;
-            return a.name.compareTo(b.name);
-          });
-
-          return characters;
+          }
         }
+      } else if (data is Map<String, dynamic> && data.containsKey('characters')) {
+        // If the JSON has a "characters" key that holds the list
+        for (var item in data['characters']) {
+          if (item is Map<String, dynamic>) {
+            try {
+              characters.add(Character.fromJson(item));
+            } catch (e) {
+              print('Error parsing character: $e');
+              print('Character data: $item');
+            }
+          }
+        }
+      } else {
+        throw Exception('Invalid JSON format: Expected array or object with "characters" key.');
       }
 
-      throw ApiException('Failed to load characters: ${response.statusCode}');
-    } on http.ClientException catch (e) {
-      throw ApiException('Network error: ${e.message}');
+      if (characters.isEmpty) {
+        throw Exception('No characters found in JSON file.');
+      }
+
+      // Sort by rarity (descending) and then by name
+      characters.sort((a, b) {
+        int rarityComparison = b.rarity.compareTo(a.rarity);
+        if (rarityComparison != 0) {
+          return rarityComparison;
+        }
+        return a.name.compareTo(b.name);
+      });
+
+      print('Successfully loaded ${characters.length} characters');
+      return characters;
     } catch (e) {
-      throw ApiException('Unexpected error: $e');
+      print('Error loading or parsing characters from local JSON: $e');
+      rethrow;
     }
   }
 
-  static Future<Character> getCharacterById(String id) async {
+  static Future<Character> getCharacterById(String characterId) async {
     try {
-      final response = await http
-          .get(
-        Uri.parse('$baseUrl/character/$id'),
-        headers: {'Content-Type': 'application/json'},
-      )
-          .timeout(timeout);
+      // Get all characters first
+      final characters = await getCharacters();
 
-      if (response.statusCode == 200) {
-        final data = json.decode(response.body);
-        data['id'] = id;
-        return Character.fromJson(data);
-      }
+      // Find the character with the matching ID
+      final character = characters.firstWhere(
+            (char) => char.id == characterId,
+        orElse: () => throw Exception('Character with ID $characterId not found'),
+      );
 
-      throw ApiException('Failed to load character: ${response.statusCode}');
-    } on http.ClientException catch (e) {
-      throw ApiException('Network error: ${e.message}');
+      return character;
     } catch (e) {
-      throw ApiException('Unexpected error: $e');
+      print('Error getting character by ID: $e');
+      rethrow;
     }
   }
-}
-
-class ApiException implements Exception {
-  final String message;
-
-  const ApiException(this.message);
-
-  @override
-  String toString() => 'ApiException: $message';
 }

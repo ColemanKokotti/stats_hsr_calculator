@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../themes/firefly_theme.dart';
+import '../themes/firefly_theme.dart';
 
-class FavoritePgScreen extends StatelessWidget {
-  const FavoritePgScreen({super.key});
+class StatsRecordsScreen extends StatelessWidget {
+  const StatsRecordsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class FavoritePgScreen extends StatelessWidget {
         decoration: BoxDecoration(gradient: FireflyTheme.backgroundGradient),
         child: Center(
           child: FireflyTheme.gradientText(
-            'Favorite PG',
+            'Stats Records',
             gradient: FireflyTheme.eyesGradient,
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               fontWeight: FontWeight.bold,

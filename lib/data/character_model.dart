@@ -2,7 +2,8 @@
 class Character {
   final String id;
   final String name;
-  final String imageUrl;
+  final String imageUrl;  // Per l'icon
+  final String portrait;  // Per il portrait
   final String pathImage;
   final String pathName;
   final String element;
@@ -13,6 +14,7 @@ class Character {
     required this.id,
     required this.name,
     required this.imageUrl,
+    required this.portrait,
     required this.pathImage,
     required this.pathName,
     required this.element,
@@ -24,6 +26,7 @@ class Character {
     String? id,
     String? name,
     String? imageUrl,
+    String? portrait,
     String? pathImage,
     String? pathName,
     String? element,
@@ -34,6 +37,7 @@ class Character {
       id: id ?? this.id,
       name: name ?? this.name,
       imageUrl: imageUrl ?? this.imageUrl,
+      portrait: portrait ?? this.portrait,
       pathImage: pathImage ?? this.pathImage,
       pathName: pathName ?? this.pathName,
       element: element ?? this.element,
@@ -46,10 +50,11 @@ class Character {
     return Character(
       id: json['id']?.toString() ?? '',
       name: json['name'] ?? '',
-      imageUrl: json['icon'] ?? json['portrait'] ?? '',
-      pathImage: json['path']?['icon'] ?? '',
-      pathName: json['path']?['name'] ?? '',
-      element: json['element']?['name'] ?? '',
+      imageUrl: json['icon'] ?? '',  // Icon per CharacterIconWidget
+      portrait: json['portrait'] ?? '',  // Portrait per CharacterPortraitWidget
+      pathImage: '', // Non abbiamo path image nel nuovo JSON
+      pathName: json['path'] ?? '',
+      element: json['element'] ?? '',
       rarity: json['rarity'] ?? 4,
       isFavorite: false,
     );
@@ -59,9 +64,10 @@ class Character {
     return {
       'id': id,
       'name': name,
-      'imageUrl': imageUrl,
+      'icon': imageUrl,  // Salva come icon
+      'portrait': portrait,  // Salva come portrait
       'pathImage': pathImage,
-      'pathName': pathName,
+      'path': pathName,  // Salva come path
       'element': element,
       'rarity': rarity,
       'isFavorite': isFavorite,

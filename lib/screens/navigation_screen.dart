@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import '../themes/firefly_theme.dart';
-import 'home/home_screen.dart';
-import 'stats_calculator/stats_calculator_screen.dart';
-import 'stats_records/stats_records_screen.dart';
-import 'favorite_pg/favorite_pg_screen.dart';
+import 'home_screen.dart';
+import 'stats_calculator_screen.dart';
+import 'stats_records_screen.dart';
+import 'favorite_pg_screen.dart';
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});

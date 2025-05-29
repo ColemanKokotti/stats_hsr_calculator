@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../themes/firefly_theme.dart';
+import '../themes/firefly_theme.dart';
 
-class StatsRecordsScreen extends StatelessWidget {
-  const StatsRecordsScreen({super.key});
+class StatsCalculatorScreen extends StatelessWidget {
+  const StatsCalculatorScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class StatsRecordsScreen extends StatelessWidget {
         decoration: BoxDecoration(gradient: FireflyTheme.backgroundGradient),
         child: Center(
           child: FireflyTheme.gradientText(
-            'Stats Records',
+            'Stats Calculator',
             gradient: FireflyTheme.eyesGradient,
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               fontWeight: FontWeight.bold,

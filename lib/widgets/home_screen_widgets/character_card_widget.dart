@@ -29,7 +29,6 @@ class CharacterCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Header con immagine, info e pulsante favorito
                 Row(
                   children: [
                     CharacterImage(character: character),

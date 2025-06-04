@@ -11,11 +11,14 @@ class SearchBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final homeCubit = context.read<HomeCubit>();
+
     return BlocBuilder<HomeCubit, HomeState>(
       builder: (context, state) {
         return Container(
-          decoration: FireflyTheme.cardDecoration,
+          decoration: FireflyTheme.searchDecoration,
           child: TextField(
+            controller: homeCubit.searchController, // Usa il controller dal Cubit
             style: TextStyle(color: FireflyTheme.white),
             decoration: InputDecoration(
               hintText: 'Search characters...',
@@ -39,7 +42,7 @@ class SearchBarWidget extends StatelessWidget {
               contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             ),
             onChanged: (value) {
-              context.read<HomeCubit>().updateSearchQuery(value);
+              // Non chiamare updateSearchQuery perché il controller è già sincronizzato
               context.read<CharacterBloc>().add(SearchCharacters(value));
             },
           ),

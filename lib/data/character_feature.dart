@@ -55,7 +55,7 @@ class ChararcterAssets {
     'galaxy rangers': 0xFF2ECC71,
     'xianzhou luofu': 0xFFF39C12,
     'xianzhou yaoqing': 0xFFD35400,
-    'ipc': 0xFF34495E,
+    'ipc': 0xFFc09c7b,
     'stellaron hunters': 0xFF8E44AD,
     'masked fools': 0xFFE67E22,
     'memokeeper': 0xFF3498DB,

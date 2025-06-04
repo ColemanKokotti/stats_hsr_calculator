@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 width: 200,
                 height: 200,
                 child: Image.asset(
-                  'assets/images/roll-firefly.gif',
+                  'assets/images/firefly-home.gif',
                   fit: BoxFit.contain,
                 ),
               ),

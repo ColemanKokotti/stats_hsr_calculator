@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import '../../data/character_model.dart';
 import '../../themes/firefly_theme.dart';
 
-class CharacterPortraitWidget extends StatelessWidget {
+class CharacterStatsPortrait extends StatelessWidget {
   final Character character;
   final double size;
 
-  const CharacterPortraitWidget({
+  const CharacterStatsPortrait({
     super.key,
     required this.character,
     this.size = 200,
@@ -34,9 +34,9 @@ class CharacterPortraitWidget extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
-        child: character.portrait.isNotEmpty  // Cambiato da imageUrl a portrait
+        child: character.imageUrl.isNotEmpty  // Cambiato da imageUrl a portrait
             ? Image.network(
-          character.portrait,  // Cambiato da imageUrl a portrait
+          character.imageUrl,  // Cambiato da imageUrl a portrait
           fit: BoxFit.cover,
           errorBuilder: (context, error, stackTrace) {
             return Container(

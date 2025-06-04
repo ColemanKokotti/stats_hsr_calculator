@@ -1,3 +1,5 @@
+import 'package:help_project/widgets/character_detailed_screen_widgets/character_faction_widget.dart';
+
 import '../../data/character_model.dart';
 import 'package:flutter/material.dart';
 
@@ -79,6 +81,23 @@ class CharacterInfoContainerWidget extends StatelessWidget {
                 ],
               ),
             ],
+          ),
+          const SizedBox(height: 30),
+          Center(
+            child: Column(
+              children: [
+                Text(
+                  'Faction',
+                  style: TextStyle(
+                    color: FireflyTheme.white.withOpacity(0.8),
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                CharacterFactionWidget(faction: character.faction)
+              ],
+            ),
           ),
         ],
       ),

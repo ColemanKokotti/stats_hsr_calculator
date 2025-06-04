@@ -15,7 +15,7 @@ class CharacterElementWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final elementColor = ChararcterAssets.getFactionColor(element);
+    final elementColor = ChararcterAssets.getElementColor(element);
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),

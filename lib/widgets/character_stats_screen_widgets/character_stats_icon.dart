@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:help_project/screens/character_detailed_screen.dart';
 import '../../data/character_model.dart';
 import '../../themes/firefly_theme.dart';
-import '../../screens/character_stats_screen.dart'; // Assicurati che il path sia corretto
 
-class CharacterIconWidget extends StatelessWidget {
+
+class CharacterStatsIcon extends StatelessWidget {
   final Character character;
   final double size;
   final VoidCallback? onTap; // Callback opzionale per personalizzare l'azione
 
-  const CharacterIconWidget({
+  const CharacterStatsIcon({
     super.key,
     required this.character,
     this.size = 40,
@@ -19,10 +20,10 @@ class CharacterIconWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap ?? () {
-        Navigator.push(
+        Navigator.pop(
           context,
           MaterialPageRoute(
-            builder: (context) => CharacterStatsScreen(character: character),
+            builder: (context) => CharacterDetailScreen(character: character),
           ),
         );
       },
@@ -45,9 +46,9 @@ class CharacterIconWidget extends StatelessWidget {
         ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(6),
-          child: character.imageUrl.isNotEmpty
+          child: character.portrait.isNotEmpty
               ? Image.network(
-            character.imageUrl,
+            character.portrait,
             fit: BoxFit.cover,
             errorBuilder: (context, error, stackTrace) {
               return Container(

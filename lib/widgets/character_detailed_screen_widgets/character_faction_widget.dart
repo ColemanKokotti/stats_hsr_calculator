@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import '../../../data/character_feature.dart';
 import '../../../data/character_rarity.dart';
 
-class FactionBadge extends StatelessWidget {
+class CharacterFactionWidget extends StatelessWidget {
   final String faction;
 
-  const FactionBadge({
+  const CharacterFactionWidget({
     super.key,
     required this.faction,
   });
@@ -15,7 +15,7 @@ class FactionBadge extends StatelessWidget {
     final factionColor = ChararcterAssets.getFactionColor(faction);
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
         color: factionColor.withOpacity(0.3),
         borderRadius: BorderRadius.circular(12),
@@ -35,7 +35,7 @@ class FactionBadge extends StatelessWidget {
             style: Theme.of(context).textTheme.bodySmall?.copyWith(
               color: factionColor,
               fontWeight: FontWeight.w600,
-              fontSize: 11,
+              fontSize: 16,
             ),
           ),
         ],

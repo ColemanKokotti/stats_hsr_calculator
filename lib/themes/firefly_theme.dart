@@ -85,7 +85,13 @@ class FireflyTheme {
   );
 
   static LinearGradient get cardGradient => LinearGradient(
-    colors: [_jacket.withOpacity(0.8), _darkPurple.withOpacity(0.7)],
+    colors: [_turquoiseDark.withValues(alpha: 0.7),_jacket.withOpacity(0.8),_goldHighlight.withOpacity(0.7)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+
+  static LinearGradient get searchGradient => LinearGradient(
+    colors: [_turquoiseDark.withValues(alpha: 0.7),_goldHighlight.withOpacity(0.7)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
@@ -98,6 +104,18 @@ class FireflyTheme {
 
   static BoxDecoration get cardDecoration => BoxDecoration(
     gradient: cardGradient,
+    borderRadius: BorderRadius.circular(12),
+    border: Border.all(color: _gold.withOpacity(0.5), width: 1),
+    boxShadow: [
+      BoxShadow(
+        color: _black.withOpacity(0.3),
+        blurRadius: 8,
+        offset: const Offset(0, 4),
+      ),
+    ],
+  );
+  static BoxDecoration get searchDecoration => BoxDecoration(
+    gradient: searchGradient,
     borderRadius: BorderRadius.circular(12),
     border: Border.all(color: _gold.withOpacity(0.5), width: 1),
     boxShadow: [
@@ -121,7 +139,7 @@ class FireflyTheme {
         tertiary: _gold,
         surface: _darkPurple,
         background: _turquoise, // Scaffold color is now turquoise
-        error: Color(0xFFE57373),
+        error: const Color(0xFFE57373),
         onPrimary: _white,
         onSecondary: _black,
         onTertiary: _black,

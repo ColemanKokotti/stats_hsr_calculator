@@ -19,7 +19,7 @@ class StatsHeader extends StatelessWidget {
           'Character Flat Stats Lv 80',
           style: TextStyle(
             color: FireflyTheme.white,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),

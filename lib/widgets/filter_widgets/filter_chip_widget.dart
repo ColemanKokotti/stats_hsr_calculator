@@ -22,9 +22,10 @@ class FilterChipWidget extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         decoration: BoxDecoration(
-          color: isSelected
-              ? FireflyTheme.turquoise
-              : FireflyTheme.jacket,
+          // Qui applichiamo il LinearGradient
+          gradient: isSelected
+              ? FireflyTheme.selectedFilterGradient
+              : FireflyTheme.notSelectedFilterGradient,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
             color: isSelected ? FireflyTheme.turquoise : FireflyTheme.white.withOpacity(0.3),

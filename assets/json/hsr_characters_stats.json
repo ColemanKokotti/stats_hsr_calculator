@@ -736,6 +736,50 @@
       "ult_cost": "140",
       "crit_rate": "50.0",
       "crit_dmg": "100.0"
+    },
+    {
+      "id": "1310",
+      "name": "Phainon ",
+      "hp": "1051",
+      "atk": "698",
+      "def": "436",
+      "spd": " 101",
+      "ult_cost": "",
+      "crit_rate": "50.0",
+      "crit_dmg": "100.0"
+    },
+    {
+      "id": "1311",
+      "name": "Trailblazer (Destruction)",
+      "hp": "1047",
+      "atk": "679",
+      "def": "436",
+      "spd": " 100",
+      "ult_cost": "120 ",
+      "crit_rate": "50.0",
+      "crit_dmg": "100.0"
+    },
+    {
+      "id": "1312",
+      "name": "Trailblazer (Preservation)",
+      "hp": "1203 ",
+      "atk": "476 ",
+      "def": "661 ",
+      "spd": " 100",
+      "ult_cost": "120 ",
+      "crit_rate": "50.0",
+      "crit_dmg": "100.0"
+    },
+    {
+      "id": "1313",
+      "name": "Trailblazer (Harmony)",
+      "hp": "1001",
+      "atk": "453",
+      "def": "496",
+      "spd": " 102 ",
+      "ult_cost": "140 ",
+      "crit_rate": "50.0",
+      "crit_dmg": "100.0"
     }
   ]
 }

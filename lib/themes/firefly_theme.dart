@@ -103,6 +103,17 @@ class FireflyTheme {
     end: Alignment.bottomRight,
   );
 
+  static LinearGradient get selectedFilterGradient => LinearGradient(
+    colors: [_turquoiseDark.withValues(alpha: 0.7),_goldHighlight.withOpacity(0.7)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+  static LinearGradient get notSelectedFilterGradient => LinearGradient(
+    colors: [_lightPurple.withValues(alpha: 0.7),_jacket.withOpacity(0.7)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+
   static LinearGradient get buttonGradient => const LinearGradient(
     colors: [_turquoise, _blue],
     begin: Alignment.centerLeft,
@@ -145,7 +156,6 @@ class FireflyTheme {
       ),
     ],
   );
-
   // Main theme
   static ThemeData get theme {
     return ThemeData(

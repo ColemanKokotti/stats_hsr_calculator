@@ -29,19 +29,19 @@ class ChararcterAssets {
     'fire': 0xFFdd571c,
     'ice': 0xFFfdf8ff,
     'lightning': 0xFF9e7bb3,
-    'wind': 0xFF2e6f40,
-    'physical': 0xFF657895,
-    'quantum': 0xFF592693,
+    'wind': 0xFF39f077,
+    'physical': 0xFFc6ccd3,
+    'quantum': 0xFFb99ac0,
     'imaginary': 0xFFfebe00,
   };
 
   // Colori per i path
   static const Map<String, int> pathColors = {
-    'destruction': 0xFFFF4757,
-    'hunt': 0xFF00D2D3,
+    'destruction': 0xFFe3191c,
+    'hunt': 0xFF04a5f4,
     'erudition': 0xFF9C88FF,
-    'harmony': 0xFF7ED321,
-    'nihility': 0xFF8E44AD,
+    'harmony': 0xFF00c9a7,
+    'nihility': 0xFFe52d8a,
     'preservation': 0xFFF39C12,
     'abundance': 0xFF27AE60,
     'remembrance': 0xFF74C0FC

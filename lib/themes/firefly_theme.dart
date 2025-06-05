@@ -21,6 +21,7 @@ class FireflyTheme {
   static const Color _lightPurple = Color(0xFFB4A8CD); // Light purple for details
   static const Color _black = Color(0xFF1C1921); // Black accents
   static const Color _darkPurple = Color(0xFF36304A); // Dark purple for depth
+  static const Color _oceanBlue =  Color(0xFF02394e);
 
   // Public getters for theme colors
   static Color get gold => _gold;
@@ -85,9 +86,15 @@ class FireflyTheme {
   );
 
   static LinearGradient get cardGradient => LinearGradient(
-    colors: [_turquoiseDark.withValues(alpha: 0.7),_jacket.withOpacity(0.8),_goldHighlight.withOpacity(0.7)],
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
+    colors: [_oceanBlue.withOpacity(0.8),_darkPurple.withOpacity(0.7)],
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+  );
+
+  static LinearGradient get statsGradient => LinearGradient(
+    colors: [_turquoiseDark.withOpacity(0.8),_lightPurple.withOpacity(0.7)],
+    begin: Alignment.bottomCenter,
+    end: Alignment.topCenter,
   );
 
   static LinearGradient get searchGradient => LinearGradient(
@@ -104,6 +111,18 @@ class FireflyTheme {
 
   static BoxDecoration get cardDecoration => BoxDecoration(
     gradient: cardGradient,
+    borderRadius: BorderRadius.circular(12),
+    border: Border.all(color: _gold.withOpacity(0.5), width: 1),
+    boxShadow: [
+      BoxShadow(
+        color: _black.withOpacity(0.3),
+        blurRadius: 8,
+        offset: const Offset(0, 4),
+      ),
+    ],
+  );
+  static BoxDecoration get statsDecoration => BoxDecoration(
+    gradient: statsGradient,
     borderRadius: BorderRadius.circular(12),
     border: Border.all(color: _gold.withOpacity(0.5), width: 1),
     boxShadow: [

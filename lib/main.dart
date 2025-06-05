@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'bloc/Character_Bloc/character_bloc.dart';
+import 'bloc/Favorits_Cubit/favorits_cubit.dart';
 import 'screens/splash_screen.dart';
 import 'screens/navigation_screen.dart';
 import 'themes/firefly_theme.dart';
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(
           create: (context) => CharacterBloc(),
+        ),
+        BlocProvider<FavoritesCubit>(
+          create: (context) => FavoritesCubit(),
         ),
       ],child: MaterialApp(
     title: 'HSR Stats Calculator',

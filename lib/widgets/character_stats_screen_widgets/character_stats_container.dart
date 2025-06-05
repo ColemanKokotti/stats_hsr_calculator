@@ -20,7 +20,7 @@ class CharacterStatsContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(16),
-      decoration: FireflyTheme.cardDecoration.copyWith(
+      decoration: FireflyTheme.statsDecoration.copyWith(
         boxShadow: [
           BoxShadow(
             color: FireflyTheme.turquoise.withOpacity(0.1),

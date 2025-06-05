@@ -52,6 +52,7 @@ flutter:
     - assets/json/hsr_characters.json
     - assets/json/hsr_characters_stats.json
     - assets/images/roll-firefly.gif
+    - assets/images/like-firefly.gif
     - assets/images/icon-app.png
     - assets/icons/element_icons/
     - assets/icons/path_icons/

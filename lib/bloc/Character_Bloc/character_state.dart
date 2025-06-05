@@ -2,7 +2,6 @@
 import 'package:equatable/equatable.dart';
 import '../../data/character_model.dart';
 
-
 abstract class CharacterState extends Equatable {
   const CharacterState();
 
@@ -25,7 +24,6 @@ class CharacterLoaded extends CharacterState {
   final String? selectedElement;
   final String? selectedPath;
   final int? selectedRarity;
-  final bool showFavoritesOnly;
 
   const CharacterLoaded({
     required this.characters,
@@ -34,7 +32,6 @@ class CharacterLoaded extends CharacterState {
     this.selectedElement,
     this.selectedPath,
     this.selectedRarity,
-    this.showFavoritesOnly = false,
   });
 
   CharacterLoaded copyWith({
@@ -44,16 +41,14 @@ class CharacterLoaded extends CharacterState {
     String? selectedElement,
     String? selectedPath,
     int? selectedRarity,
-    bool? showFavoritesOnly,
   }) {
     return CharacterLoaded(
       characters: characters ?? this.characters,
       filteredCharacters: filteredCharacters ?? this.filteredCharacters,
       searchQuery: searchQuery ?? this.searchQuery,
-      selectedElement: selectedElement ?? this.selectedElement,
-      selectedPath: selectedPath ?? this.selectedPath,
-      selectedRarity: selectedRarity ?? this.selectedRarity,
-      showFavoritesOnly: showFavoritesOnly ?? this.showFavoritesOnly,
+      selectedElement: selectedElement,
+      selectedPath: selectedPath,
+      selectedRarity: selectedRarity,
     );
   }
 
@@ -65,7 +60,6 @@ class CharacterLoaded extends CharacterState {
     selectedElement,
     selectedPath,
     selectedRarity,
-    showFavoritesOnly,
   ];
 }
 

@@ -77,10 +77,44 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
     if (state is CharacterLoaded) {
       final currentState = state as CharacterLoaded;
 
-      // Determina i nuovi valori dei filtri
-      final newElement = event.element ?? currentState.selectedElement;
-      final newPath = event.path ?? currentState.selectedPath;
-      final newRarity = event.rarity ?? currentState.selectedRarity;
+      // Determina i nuovi valori dei filtri e se devono essere puliti
+      String? newElement = currentState.selectedElement;
+      String? newPath = currentState.selectedPath;
+      int? newRarity = currentState.selectedRarity;
+
+      bool clearElement = false;
+      bool clearPath = false;
+      bool clearRarity = false;
+
+      // Gestisce l'elemento
+      if (event.element != null) {
+        if (event.element!.isEmpty) {
+          clearElement = true;
+          newElement = null;
+        } else {
+          newElement = event.element;
+        }
+      }
+
+      // Gestisce il path
+      if (event.path != null) {
+        if (event.path!.isEmpty) {
+          clearPath = true;
+          newPath = null;
+        } else {
+          newPath = event.path;
+        }
+      }
+
+      // Gestisce la rarità (usa -1 per indicare clear)
+      if (event.rarity != null) {
+        if (event.rarity == -1) {
+          clearRarity = true;
+          newRarity = null;
+        } else {
+          newRarity = event.rarity;
+        }
+      }
 
       final filteredCharacters = _applyFilters(
         _allCharacters,
@@ -95,6 +129,9 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
         selectedElement: newElement,
         selectedPath: newPath,
         selectedRarity: newRarity,
+        clearElement: clearElement,
+        clearPath: clearPath,
+        clearRarity: clearRarity,
       ));
     }
   }
@@ -141,6 +178,9 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
         selectedElement: null,
         selectedPath: null,
         selectedRarity: null,
+        clearElement: true,
+        clearPath: true,
+        clearRarity: true,
       ));
     }
   }

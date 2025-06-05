@@ -28,6 +28,9 @@ class MyApp extends StatelessWidget {
         BlocProvider<FavoritesCubit>(
           create: (context) => FavoritesCubit(),
         ),
+        BlocProvider<FavoritesCubit>(
+          create: (context) => FavoritesCubit(),
+        ),
       ],child: MaterialApp(
     title: 'HSR Stats Calculator',
     theme: FireflyTheme.theme,

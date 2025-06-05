@@ -34,7 +34,7 @@ class PathDialog {
                   title: Text('Clear Filter', style: TextStyle(color: FireflyTheme.white)),
                   leading: Icon(Icons.clear, color: FireflyTheme.turquoise),
                   onTap: () {
-                    context.read<CharacterBloc>().add(const FilterCharacters(path: null));
+                    context.read<CharacterBloc>().add(const FilterCharacters(path: ''));
                     context.read<FilterCubit>().hideDialog();
                     Navigator.pop(dialogContext);
                   },

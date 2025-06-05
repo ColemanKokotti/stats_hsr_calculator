@@ -16,7 +16,7 @@ class StatsHeader extends StatelessWidget {
         ),
         const SizedBox(width: 8),
         Text(
-          'Character Statistics',
+          'Character Flat Stats Lv 80',
           style: TextStyle(
             color: FireflyTheme.white,
             fontSize: 20,

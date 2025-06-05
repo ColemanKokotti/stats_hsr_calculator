@@ -41,14 +41,17 @@ class CharacterLoaded extends CharacterState {
     String? selectedElement,
     String? selectedPath,
     int? selectedRarity,
+    bool clearElement = false,
+    bool clearPath = false,
+    bool clearRarity = false,
   }) {
     return CharacterLoaded(
       characters: characters ?? this.characters,
       filteredCharacters: filteredCharacters ?? this.filteredCharacters,
       searchQuery: searchQuery ?? this.searchQuery,
-      selectedElement: selectedElement,
-      selectedPath: selectedPath,
-      selectedRarity: selectedRarity,
+      selectedElement: clearElement ? null : (selectedElement ?? this.selectedElement),
+      selectedPath: clearPath ? null : (selectedPath ?? this.selectedPath),
+      selectedRarity: clearRarity ? null : (selectedRarity ?? this.selectedRarity),
     );
   }
 
@@ -62,7 +65,6 @@ class CharacterLoaded extends CharacterState {
     selectedRarity,
   ];
 }
-
 class CharacterError extends CharacterState {
   final String message;
 

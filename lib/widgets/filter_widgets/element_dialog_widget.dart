@@ -34,7 +34,8 @@ class ElementDialog {
                   title: Text('Clear Filter', style: TextStyle(color: FireflyTheme.white)),
                   leading: Icon(Icons.clear, color: FireflyTheme.turquoise),
                   onTap: () {
-                    context.read<CharacterBloc>().add(const FilterCharacters(element: null));
+                    // Usa una stringa vuota per indicare la cancellazione
+                    context.read<CharacterBloc>().add(const FilterCharacters(element: ''));
                     context.read<FilterCubit>().hideDialog();
                     Navigator.pop(dialogContext);
                   },

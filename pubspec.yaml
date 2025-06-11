@@ -53,11 +53,11 @@ flutter:
     - assets/json/hsr_characters_stats.json
     - assets/images/roll-firefly.gif
     - assets/images/like-firefly.gif
-    - assets/images/icon-app.png
+    - assets/images/hsr_stats_calculator_logo.png
     - assets/icons/element_icons/
     - assets/icons/path_icons/
 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/images/icon-app.png"
+  image_path: "assets/images/hsr_stats_calculator_logo.png"

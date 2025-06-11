@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:help_project/screens/profile_screen.dart';
 import '../themes/firefly_theme.dart';
 import 'home_screen.dart';
 import 'stats_calculator_screen.dart';
@@ -20,6 +21,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
     StatsCalculatorScreen(),
     StatsRecordsScreen(),
     FavoritePgScreen(),
+    ProfileScreen()
   ];
 
   void _onItemTapped(int index) {
@@ -60,6 +62,10 @@ class _NavigationScreenState extends State<NavigationScreen> {
             BottomNavigationBarItem(
               icon: Icon(Icons.favorite),
               label: 'Favorites',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.people),
+              label: 'Profile',
             ),
           ],
           currentIndex: _selectedIndex,

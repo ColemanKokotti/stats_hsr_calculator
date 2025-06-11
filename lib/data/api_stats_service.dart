@@ -1,160 +1,27 @@
-import 'dart:convert';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart' show rootBundle;
-
+import '../firebase_service/fireabese_service.dart';
 import 'character_stats.dart';
 
 class ApiStatsService {
   static Future<List<CharacterStats>> getCharacterStats() async {
-    try {
-      // Load the JSON file from assets
-      final String response = await rootBundle.loadString('assets/json/hsr_characters_stats.json');
-      final data = json.decode(response);
-
-      List<CharacterStats> characterStats = [];
-
-      // Handle different JSON structures
-      if (data is List) {
-        // If the JSON is directly an array of character stats
-        for (var item in data) {
-          if (item is Map<String, dynamic>) {
-            try {
-              characterStats.add(CharacterStats.fromJson(item));
-            } catch (e) {
-              if (kDebugMode) {
-                print('Error parsing character stats: $e');
-              }
-              if (kDebugMode) {
-                print('Character stats data: $item');
-              }
-            }
-          }
-        }
-      } else if (data is Map<String, dynamic> && data.containsKey('characters')) {
-        // If the JSON has a "characters" key that holds the list
-        for (var item in data['characters']) {
-          if (item is Map<String, dynamic>) {
-            try {
-              characterStats.add(CharacterStats.fromJson(item));
-            } catch (e) {
-              if (kDebugMode) {
-                print('Error parsing character stats: $e');
-              }
-              if (kDebugMode) {
-                print('Character stats data: $item');
-              }
-            }
-          }
-        }
-      } else {
-        throw Exception('Invalid JSON format: Expected array or object with "characters" key.');
-      }
-
-      if (characterStats.isEmpty) {
-        throw Exception('No character stats found in JSON file.');
-      }
-
-      // Sort by id for consistent ordering
-      characterStats.sort((a, b) => a.id.compareTo(b.id));
-
-      if (kDebugMode) {
-        print('Successfully loaded ${characterStats.length} character stats');
-      }
-      return characterStats;
-    } catch (e) {
-      if (kDebugMode) {
-        print('Error loading or parsing character stats from local JSON: $e');
-      }
-      rethrow;
-    }
+    return await FirebaseService.getCharacterStats();
   }
 
   static Future<CharacterStats?> getCharacterStatsById(String characterId) async {
-    try {
-      // Get all character stats first
-      final characterStats = await getCharacterStats();
-
-      // Find the character stats with the matching ID
-      try {
-        final stats = characterStats.firstWhere(
-              (stats) => stats.id == characterId,
-        );
-        return stats;
-      } catch (e) {
-        // Character not found, return null instead of throwing
-        if (kDebugMode) {
-          print('Character stats with ID $characterId not found');
-        }
-        return null;
-      }
-    } catch (e) {
-      if (kDebugMode) {
-        print('Error getting character stats by ID: $e');
-      }
-      rethrow;
-    }
+    return await FirebaseService.getCharacterStatsById(characterId);
   }
 
   static Future<CharacterStats?> getCharacterStatsByName(String characterName) async {
-    try {
-      // Get all character stats first
-      final characterStats = await getCharacterStats();
-
-      // Find the character stats with the matching name (case insensitive)
-      try {
-        final stats = characterStats.firstWhere(
-              (stats) => stats.name.toLowerCase() == characterName.toLowerCase(),
-        );
-        return stats;
-      } catch (e) {
-        // Character not found, return null instead of throwing
-        if (kDebugMode) {
-          print('Character stats with name $characterName not found');
-        }
-        return null;
-      }
-    } catch (e) {
-      if (kDebugMode) {
-        print('Error getting character stats by name: $e');
-      }
-      rethrow;
-    }
+    return await FirebaseService.getCharacterStatsByName(characterName);
   }
 
-  // Metodo per ottenere le statistiche di più personaggi in una sola chiamata
   static Future<Map<String, CharacterStats>> getCharacterStatsMap() async {
-    try {
-      final characterStats = await getCharacterStats();
-
-      // Crea una mappa con ID come chiave per accesso rapido
-      final Map<String, CharacterStats> statsMap = {};
-      for (var stats in characterStats) {
-        statsMap[stats.id] = stats;
-      }
-
-      return statsMap;
-    } catch (e) {
-      if (kDebugMode) {
-        print('Error creating character stats map: $e');
-      }
-      rethrow;
-    }
+    return await FirebaseService.getCharacterStatsMap();
   }
 
-  // Metodo per verificare se esistono statistiche per un personaggio
   static Future<bool> hasStatsForCharacter(String characterId) async {
-    try {
-      final stats = await getCharacterStatsById(characterId);
-      return stats != null;
-    } catch (e) {
-      if (kDebugMode) {
-        print('Error checking if stats exist for character $characterId: $e');
-      }
-      return false;
-    }
+    return await FirebaseService.hasStatsForCharacter(characterId);
   }
 
-  // Metodo per ottenere statistiche filtrate per criterio
   static Future<List<CharacterStats>> getFilteredStats({
     int? minHp,
     int? maxHp,
@@ -167,37 +34,65 @@ class ApiStatsService {
     int? minUltCost,
     int? maxUltCost,
   }) async {
-    try {
-      final allStats = await getCharacterStats();
+    return await FirebaseService.getFilteredStats(
+      minHp: minHp,
+      maxHp: maxHp,
+      minAtk: minAtk,
+      maxAtk: maxAtk,
+      minDef: minDef,
+      maxDef: maxDef,
+      minSpd: minSpd,
+      maxSpd: maxSpd,
+      minUltCost: minUltCost,
+      maxUltCost: maxUltCost,
+    );
+  }
 
-      return allStats.where((stats) {
-        // Filtra per HP
-        if (minHp != null && stats.hp < minHp) return false;
-        if (maxHp != null && stats.hp > maxHp) return false;
+  // Additional utility methods for stats analysis
+  static Future<List<CharacterStats>> getTopStatsByCategory({
+    required String category, // 'hp', 'atk', 'def', 'spd'
+    int limit = 10,
+  }) async {
+    final allStats = await getCharacterStats();
 
-        // Filtra per ATK
-        if (minAtk != null && stats.atk < minAtk) return false;
-        if (maxAtk != null && stats.atk > maxAtk) return false;
-
-        // Filtra per DEF
-        if (minDef != null && stats.def < minDef) return false;
-        if (maxDef != null && stats.def > maxDef) return false;
-
-        // Filtra per SPD
-        if (minSpd != null && stats.spd < minSpd) return false;
-        if (maxSpd != null && stats.spd > maxSpd) return false;
-
-        // Filtra per Ultimate Cost
-        if (minUltCost != null && stats.ultCost != null && stats.ultCost! < minUltCost) return false;
-        if (maxUltCost != null && stats.ultCost != null && stats.ultCost! > maxUltCost) return false;
-
-        return true;
-      }).toList();
-    } catch (e) {
-      if (kDebugMode) {
-        print('Error filtering character stats: $e');
+    allStats.sort((a, b) {
+      switch (category.toLowerCase()) {
+        case 'hp':
+          return (b.hp ?? 0).compareTo(a.hp ?? 0);
+        case 'atk':
+          return (b.atk ?? 0).compareTo(a.atk ?? 0);
+        case 'def':
+          return (b.def ?? 0).compareTo(a.def ?? 0);
+        case 'spd':
+          return (b.spd ?? 0).compareTo(a.spd ?? 0);
+        default:
+          return 0;
       }
-      rethrow;
+    });
+
+    return allStats.take(limit).toList();
+  }
+
+  static Future<Map<String, dynamic>> getStatsAverages() async {
+    final allStats = await getCharacterStats();
+    if (allStats.isEmpty) return {};
+
+    int totalHp = 0, totalAtk = 0, totalDef = 0, totalSpd = 0;
+    int count = allStats.length;
+
+    for (var stats in allStats) {
+      totalHp += stats.hp ?? 0;
+      totalAtk += stats.atk ?? 0;
+      totalDef += stats.def ?? 0;
+      totalSpd += stats.spd ?? 0;
     }
+
+    return {
+      'avgHp': totalHp / count,
+      'avgAtk': totalAtk / count,
+      'avgDef': totalDef / count,
+      'avgSpd': totalSpd / count,
+      'totalCharacters': count,
+    };
   }
 }

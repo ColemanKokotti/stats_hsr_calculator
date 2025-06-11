@@ -69,10 +69,10 @@ class Character {
     return {
       'id': id,
       'name': name,
-      'icon': imageUrl,  // Salva come icon
-      'portrait': portrait,  // Salva come portrait
+      'icon': imageUrl,
+      'portrait': portrait,
       'pathImage': pathImage,
-      'path': pathName,  // Salva come path
+      'path': pathName,
       'element': element,
       'rarity': rarity,
       'faction': faction,

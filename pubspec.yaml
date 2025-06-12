@@ -32,12 +32,11 @@ dependencies:
   cupertino_icons: ^1.0.8
   path: ^1.8.3
   shared_preferences: ^2.2.2
-  firebase_core: ^2.24.2
-  firebase_auth: ^4.15.3
-  cloud_firestore: ^4.13.6
-  firebase_storage: ^11.5.6
+  firebase_core: ^3.14.0
+  firebase_auth: ^5.6.0
+  cloud_firestore: ^5.6.9
   flutter_launcher_icons: ^0.14.3
-  http: ^1.4.0
+  http: ^0.13.6
 
 dev_dependencies:
   flutter_test:
@@ -49,13 +48,12 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/json/hsr_characters.json
-    - assets/json/hsr_characters_stats.json
     - assets/images/roll-firefly.gif
     - assets/images/like-firefly.gif
     - assets/images/hsr_stats_calculator_logo.png
     - assets/icons/element_icons/
     - assets/icons/path_icons/
+    - assets/profile_images/
 
 flutter_launcher_icons:
   android: "launcher_icon"

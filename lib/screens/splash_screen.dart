@@ -1,25 +1,8 @@
 import 'package:flutter/material.dart';
 import '../themes/firefly_theme.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
-
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    _navigateToHome();
-  }
-
-  void _navigateToHome() async {
-    await Future.delayed(const Duration(seconds: 3));
-    if (!mounted) return;
-    Navigator.of(context).pushReplacementNamed('/navigation');
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,21 +15,52 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              // App logo or icon
               Container(
-                width: 200,
-                height: 200,
-                child: Image.asset(
-                  'assets/images/firefly-home.gif',
-                  fit: BoxFit.contain,
+                width: 120,
+                height: 120,
+                decoration: BoxDecoration(
+                  gradient: FireflyTheme.goldGradient,
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: FireflyTheme.gold.withOpacity(0.5),
+                      blurRadius: 20,
+                      spreadRadius: 5,
+                    ),
+                  ],
+                ),
+                child: Center(
+                  child: Icon(
+                    Icons.fireplace,
+                    size: 60,
+                    color: FireflyTheme.jacket,
+                  ),
                 ),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 40),
+              
+              // App name with gradient text
               FireflyTheme.gradientText(
                 'HSR Stats Calculator',
-                gradient: FireflyTheme.eyesGradient,
-                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
+                gradient: FireflyTheme.goldGradient,
+                style: TextStyle(
+                  color: FireflyTheme.white.withOpacity(0.8),
+                  fontSize: 18,
                   letterSpacing: 1.2,
+                ),
+              ),
+
+
+              const SizedBox(height: 60),
+              
+              // Loading indicator
+              SizedBox(
+                width: 40,
+                height: 40,
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(FireflyTheme.turquoise),
+                  strokeWidth: 3,
                 ),
               ),
             ],

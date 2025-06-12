@@ -6,6 +6,7 @@ import '../../../../bloc/Login_Cubit/login_cubit.dart';
 import '../../../../bloc/Login_Cubit/login_state.dart';
 import '../../castom_auth_widgets/custom_elevated_button.dart';
 import '../../castom_auth_widgets/custom_outline_button.dart';
+import 'login_form.dart';
 
 class LoginButtons extends StatelessWidget {
   final VoidCallback onGuestLogin;
@@ -27,10 +28,23 @@ class LoginButtons extends StatelessWidget {
                   onPressed: authState is AuthLoading
                       ? null
                       : () {
-                    context.read<AuthCubit>().signInWithEmailAndPassword(
-                      email: loginState.email,
-                      password: loginState.password,
-                    );
+                    // Validate form using the global key
+                    if (loginFormKey.currentState != null && 
+                        loginFormKey.currentState!.validate()) {
+                      // Show loading indicator
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Logging in...'),
+                          duration: Duration(seconds: 1),
+                        ),
+                      );
+                      
+                      // Attempt login
+                      context.read<AuthCubit>().signInWithEmailAndPassword(
+                        email: loginState.email,
+                        password: loginState.password,
+                      );
+                    }
                   },
                   isLoading: authState is AuthLoading,
                   text: 'Login',

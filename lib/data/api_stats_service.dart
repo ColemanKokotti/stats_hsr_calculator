@@ -58,13 +58,13 @@ class ApiStatsService {
     allStats.sort((a, b) {
       switch (category.toLowerCase()) {
         case 'hp':
-          return (b.hp ?? 0).compareTo(a.hp ?? 0);
+          return (b.hp).compareTo(a.hp);
         case 'atk':
-          return (b.atk ?? 0).compareTo(a.atk ?? 0);
+          return (b.atk).compareTo(a.atk);
         case 'def':
-          return (b.def ?? 0).compareTo(a.def ?? 0);
+          return (b.def).compareTo(a.def);
         case 'spd':
-          return (b.spd ?? 0).compareTo(a.spd ?? 0);
+          return (b.spd).compareTo(a.spd);
         default:
           return 0;
       }
@@ -81,10 +81,10 @@ class ApiStatsService {
     int count = allStats.length;
 
     for (var stats in allStats) {
-      totalHp += stats.hp ?? 0;
-      totalAtk += stats.atk ?? 0;
-      totalDef += stats.def ?? 0;
-      totalSpd += stats.spd ?? 0;
+      totalHp += stats.hp;
+      totalAtk += stats.atk;
+      totalDef += stats.def;
+      totalSpd += stats.spd;
     }
 
     return {

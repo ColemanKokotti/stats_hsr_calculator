@@ -12,5 +12,7 @@ class AuthScreenCubit extends Cubit<AuthScreenState> {
   }
 
   void handleGuestLogin() {
+    // This method is now handled directly in the AnimatedAuthForm widget
+    // through the AuthCubit.signInAsGuest() method
   }
 }

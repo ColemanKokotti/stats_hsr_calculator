@@ -35,6 +35,8 @@ class CharacterImage extends StatelessWidget {
         child: character.imageUrl.isNotEmpty
             ? Image.network(
           character.imageUrl,
+          width: 60,
+          height: 60,
           fit: BoxFit.cover,
           errorBuilder: (context, error, stackTrace) => _buildPlaceholder(),
           loadingBuilder: (context, child, loadingProgress) {

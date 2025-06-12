@@ -2,6 +2,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../data/api_service.dart';
 import '../../data/character_model.dart';
+import '../../firebase_service/fireabese_service.dart';
 import 'character_event.dart';
 import 'character_state.dart';
 
@@ -25,6 +26,22 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
     }
 
     try {
+      // Try to get characters from Firebase first
+      try {
+        final characters = await FirebaseService.getCharacters();
+        _allCharacters = characters;
+        
+        emit(CharacterLoaded(
+          characters: _allCharacters,
+          filteredCharacters: _allCharacters,
+        ));
+        return;
+      } catch (firebaseError) {
+        print('Error loading characters from Firebase: $firebaseError');
+        // Fall back to API if Firebase fails
+      }
+      
+      // Fallback to API
       final characters = await ApiService.getCharacters();
       _allCharacters = characters;
 
@@ -42,6 +59,38 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
       Emitter<CharacterState> emit,
       ) async {
     try {
+      // Try to get characters from Firebase first
+      try {
+        final characters = await FirebaseService.getCharacters();
+        _allCharacters = characters;
+        
+        if (state is CharacterLoaded) {
+          final currentState = state as CharacterLoaded;
+          final filteredCharacters = _applyFilters(
+            _allCharacters,
+            currentState.searchQuery,
+            currentState.selectedElement,
+            currentState.selectedPath,
+            currentState.selectedRarity,
+          );
+
+          emit(currentState.copyWith(
+            characters: _allCharacters,
+            filteredCharacters: filteredCharacters,
+          ));
+        } else {
+          emit(CharacterLoaded(
+            characters: _allCharacters,
+            filteredCharacters: _allCharacters,
+          ));
+        }
+        return;
+      } catch (firebaseError) {
+        print('Error refreshing characters from Firebase: $firebaseError');
+        // Fall back to API if Firebase fails
+      }
+      
+      // Fallback to API
       final characters = await ApiService.getCharacters();
       _allCharacters = characters;
 

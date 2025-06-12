@@ -4,7 +4,6 @@ import '../themes/firefly_theme.dart';
 import 'home_screen.dart';
 import 'stats_calculator_screen.dart';
 import 'stats_records_screen.dart';
-import 'favorite_pg_screen.dart';
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});
@@ -20,7 +19,6 @@ class _NavigationScreenState extends State<NavigationScreen> {
     HomeScreen(),
     StatsCalculatorScreen(),
     StatsRecordsScreen(),
-    FavoritePgScreen(),
     ProfileScreen()
   ];
 
@@ -58,10 +56,6 @@ class _NavigationScreenState extends State<NavigationScreen> {
             BottomNavigationBarItem(
               icon: Icon(Icons.history),
               label: 'Records',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.favorite),
-              label: 'Favorites',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.people),

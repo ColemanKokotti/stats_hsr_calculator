@@ -77,6 +77,12 @@ class FireflyTheme {
     begin: Alignment.bottomLeft,
     end: Alignment.topRight,
   );
+  
+  static LinearGradient get turquoiseGradient => const LinearGradient(
+    colors: [_turquoise, _blue],
+    begin: Alignment.bottomLeft,
+    end: Alignment.topRight,
+  );
 
   static LinearGradient get backgroundGradient => const LinearGradient(
     colors: [_black, _jacket, _darkPurple],
@@ -209,7 +215,7 @@ class FireflyTheme {
       ),
 
       // Card theme
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 4,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
@@ -378,7 +384,7 @@ class FireflyTheme {
       ),
 
       // Dialog theme
-      dialogTheme: DialogTheme(
+      dialogTheme: DialogThemeData(
         backgroundColor: _jacket,
         elevation: 16,
         shape: RoundedRectangleBorder(

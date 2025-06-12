@@ -51,7 +51,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.help_project"
-        minSdkVersion flutter.minSdkVersion
+        minSdkVersion 23  // Increased from 21 to 23 for Firebase Auth compatibility
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

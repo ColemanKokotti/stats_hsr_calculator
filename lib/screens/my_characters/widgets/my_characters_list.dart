@@ -63,12 +63,12 @@ class _MyCharactersListContent extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              FireflyTheme.gradientText(
                 'My Characters',
-                style: TextStyle(
-                  color: FireflyTheme.white,
-                  fontSize: 20,
+                gradient: FireflyTheme.eyesGradient,
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   fontWeight: FontWeight.bold,
+                  letterSpacing: 1.2,
                 ),
               ),
               const SizedBox(height: 16),
@@ -145,8 +145,7 @@ class _MyCharactersListContent extends StatelessWidget {
           child: CharacterCard(
             character: character,
             onTap: () {
-              // Navigate to character details
-              // This would typically navigate to your character detailed screen
+              //Navigate to my character Detailed Screen
             },
           ),
         );

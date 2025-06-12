@@ -44,6 +44,35 @@ class MyCharactersCubit extends Cubit<MyCharactersState> {
       emit(currentState.copyWith(selectedCharacterIds: selectedIds));
     }
   }
+  
+  void nextPage() {
+    final currentState = state;
+    if (currentState is MyCharactersLoaded) {
+      final nextPage = currentState.currentPage + 1;
+      if (nextPage < currentState.totalPages) {
+        emit(currentState.copyWith(currentPage: nextPage));
+      }
+    }
+  }
+  
+  void previousPage() {
+    final currentState = state;
+    if (currentState is MyCharactersLoaded) {
+      final prevPage = currentState.currentPage - 1;
+      if (prevPage >= 0) {
+        emit(currentState.copyWith(currentPage: prevPage));
+      }
+    }
+  }
+  
+  void goToPage(int page) {
+    final currentState = state;
+    if (currentState is MyCharactersLoaded) {
+      if (page >= 0 && page < currentState.totalPages) {
+        emit(currentState.copyWith(currentPage: page));
+      }
+    }
+  }
 
   void navigateToCharacterSelection() {
     final currentState = state;

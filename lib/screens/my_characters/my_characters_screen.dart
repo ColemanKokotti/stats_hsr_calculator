@@ -25,7 +25,14 @@ class _MyCharactersScreenContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Characters'),
+        title:  FireflyTheme.gradientText(
+          'My Characters',
+          gradient: FireflyTheme.eyesGradient,
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.2,
+          ),
+        ),
         backgroundColor: FireflyTheme.jacket,
       ),
       body: Container(
@@ -67,13 +74,24 @@ class _MyCharactersScreenContent extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Text(
-            'Select your characters',
-            style: TextStyle(
-              color: FireflyTheme.white,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.auto_stories,
+                color: FireflyTheme.turquoise,
+                size: 24,
+              ),
+              const SizedBox(width: 8),
+              Text(
+                'Character Collection',
+                style: TextStyle(
+                  color: FireflyTheme.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
           ),
         ),
         Expanded(
@@ -96,8 +114,29 @@ class _MyCharactersScreenContent extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 backgroundColor: FireflyTheme.turquoise,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                elevation: 4,
               ),
-              child: const Text('Save Selected Characters'),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.save_alt,
+                    color: FireflyTheme.white,
+                    size: 20,
+                  ),
+                  const SizedBox(width: 6),
+                  Text(
+                    'Save Collection (${state.selectedCharacterIds.length})',
+                    style: TextStyle(
+                      color: FireflyTheme.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

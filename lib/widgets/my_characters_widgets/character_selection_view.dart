@@ -18,9 +18,13 @@ class CharacterSelectionView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return SafeArea(child:Column(
       children: [
-        const CharacterCollectionHeader(),
+        Row(children: [
+          const CharacterCollectionHeader(),
+          const Spacer(),
+          SaveCollectionButton(selectedCharacterIds: selectedCharacterIds),
+        ],),
         Expanded(
           child: CharacterSelectionGrid(
             characters: allCharacters,
@@ -30,8 +34,7 @@ class CharacterSelectionView extends StatelessWidget {
             },
           ),
         ),
-        SaveCollectionButton(selectedCharacterIds: selectedCharacterIds),
       ],
-    );
+    ),) ;
   }
 }

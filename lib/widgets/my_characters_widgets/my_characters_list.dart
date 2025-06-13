@@ -5,6 +5,7 @@ import '../../themes/firefly_theme.dart';
 import '../../widgets/home_screen_widgets/character_card_widget.dart';
 import '../../bloc/MyCharacters_Cubit/my_characters_list_cubit.dart';
 import '../../bloc/MyCharacters_Cubit/my_characters_list_state.dart';
+import '../../screens/my_character_detailed_screen.dart';
 
 
 class MyCharactersList extends StatelessWidget {
@@ -63,15 +64,6 @@ class _MyCharactersListContent extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              FireflyTheme.gradientText(
-                'My Characters',
-                gradient: FireflyTheme.eyesGradient,
-                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.2,
-                ),
-              ),
-              const SizedBox(height: 16),
               Expanded(
                 child: _buildContent(context, state),
               ),
@@ -145,7 +137,13 @@ class _MyCharactersListContent extends StatelessWidget {
           child: CharacterCard(
             character: character,
             onTap: () {
-              //Navigate to my character Detailed Screen
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => MyCharacterDetailedScreen(
+                    character: character,
+                  ),
+                ),
+              );
             },
           ),
         );

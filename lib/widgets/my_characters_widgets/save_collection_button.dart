@@ -16,7 +16,7 @@ class SaveCollectionButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: SizedBox(
-        width: double.infinity,
+        width: 60,
         child: ElevatedButton(
           onPressed: selectedCharacterIds.isNotEmpty 
               ? () => context.read<MyCharactersCubit>().saveSelectedCharacters()
@@ -36,14 +36,6 @@ class SaveCollectionButton extends StatelessWidget {
                 Icons.save_alt,
                 color: FireflyTheme.white,
                 size: 20,
-              ),
-              const SizedBox(width: 6),
-              Text(
-                'Save Collection (${selectedCharacterIds.length})',
-                style: TextStyle(
-                  color: FireflyTheme.white,
-                  fontWeight: FontWeight.bold,
-                ),
               ),
             ],
           ),

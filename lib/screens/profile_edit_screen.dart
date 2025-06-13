@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../bloc/ProfileEdit_Cubit/profile_edit_cubit.dart';
-import '../../themes/firefly_theme.dart';
-import 'widgets/edit_username_section.dart';
-import 'widgets/edit_profile_picture_section.dart';
-import 'widgets/edit_password_section.dart';
-import 'widgets/delete_account_section.dart';
+import '../bloc/ProfileEdit_Cubit/profile_edit_cubit.dart';
+import '../themes/firefly_theme.dart';
+import '../widgets/profile_edit_widgets/edit_password_section.dart';
+import '../widgets/profile_edit_widgets/edit_profile_picture_section.dart';
+import '../widgets/profile_edit_widgets/edit_username_section.dart';
+import '../widgets/profile_edit_widgets/delete_account_section.dart';
 
 class ProfileEditScreen extends StatelessWidget {
   const ProfileEditScreen({super.key});

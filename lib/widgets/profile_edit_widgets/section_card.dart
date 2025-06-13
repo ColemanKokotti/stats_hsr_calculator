@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../themes/firefly_theme.dart';
+import '../../themes/firefly_theme.dart';
 
 class SectionCard extends StatelessWidget {
   final String title;

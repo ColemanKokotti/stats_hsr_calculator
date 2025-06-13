@@ -1,10 +1,10 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../data/character_model.dart';
-import '../../../themes/firefly_theme.dart';
-import '../../../bloc/MyCharacters_Cubit/my_characters_cubit.dart';
-import '../../../bloc/MyCharacters_Cubit/my_characters_state.dart';
+import '../../data/character_model.dart';
+import '../../themes/firefly_theme.dart';
+import '../../bloc/MyCharacters_Cubit/my_characters_cubit.dart';
+import '../../bloc/MyCharacters_Cubit/my_characters_state.dart';
 import 'my_character_image.dart';
 
 class CharacterSelectionGrid extends StatelessWidget {

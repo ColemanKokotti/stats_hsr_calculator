@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../data/character_model.dart';
-import '../../../themes/firefly_theme.dart';
-import '../../../widgets/home_screen_widgets/character_card_widget.dart';
-import '../../../bloc/MyCharacters_Cubit/my_characters_list_cubit.dart';
-import '../../../bloc/MyCharacters_Cubit/my_characters_list_state.dart';
+import '../../data/character_model.dart';
+import '../../themes/firefly_theme.dart';
+import '../../widgets/home_screen_widgets/character_card_widget.dart';
+import '../../bloc/MyCharacters_Cubit/my_characters_list_cubit.dart';
+import '../../bloc/MyCharacters_Cubit/my_characters_list_state.dart';
 
 
 class MyCharactersList extends StatelessWidget {

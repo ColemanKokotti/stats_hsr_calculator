@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:help_project/widgets/profile_edit_widgets/section_card.dart';
 import '../../../bloc/ProfileEdit_Cubit/profile_edit_cubit.dart';
 import '../../../bloc/ProfileEdit_Cubit/profile_edit_state.dart';
 import '../../../bloc/Profile_Cubit/profile_cubit.dart';
 import '../../../bloc/Profile_Cubit/profile_state.dart';
 import '../../../themes/firefly_theme.dart';
-import 'section_card.dart';
+
 
 class EditProfilePictureSection extends StatefulWidget {
   const EditProfilePictureSection({super.key});

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:help_project/widgets/profile_edit_widgets/section_card.dart';
 import '../../../bloc/ProfileEdit_Cubit/profile_edit_cubit.dart';
 import '../../../bloc/ProfileEdit_Cubit/profile_edit_state.dart';
 import '../../../themes/firefly_theme.dart';
-import 'section_card.dart';
+
 
 class EditPasswordSection extends StatefulWidget {
   const EditPasswordSection({super.key});

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../themes/firefly_theme.dart';
-import '../../bloc/MyCharacters_Cubit/my_characters_cubit.dart';
-import '../../bloc/MyCharacters_Cubit/my_characters_state.dart';
-import 'widgets/my_characters_list.dart';
-import 'widgets/character_selection_grid.dart';
+import '../themes/firefly_theme.dart';
+import '../bloc/MyCharacters_Cubit/my_characters_cubit.dart';
+import '../bloc/MyCharacters_Cubit/my_characters_state.dart';
+import '../widgets/my_characters_widgets/character_selection_grid.dart';
+import '../widgets/my_characters_widgets/my_characters_list.dart';
+
 
 class MyCharactersScreen extends StatelessWidget {
   const MyCharactersScreen({super.key});

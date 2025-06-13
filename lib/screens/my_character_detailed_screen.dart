@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../data/character_model.dart';
 import '../themes/firefly_theme.dart';
+import '../themes/responsive_utils.dart';
+import '../widgets/character_detail_widgets/character_detail_container.dart';
 
 class MyCharacterDetailedScreen extends StatelessWidget {
   final Character character;
@@ -18,42 +20,24 @@ class MyCharacterDetailedScreen extends StatelessWidget {
         backgroundColor: FireflyTheme.turquoiseDark,
         title: Text(
           character.name,
-          style: TextStyle(
+          style: ResponsiveTextUtils.getTitleLargeStyle(
+            context,
             color: FireflyTheme.white,
-            fontWeight: FontWeight.bold,
           ),
         ),
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
             color: FireflyTheme.white,
+            size: ResponsiveImageUtils.getMediumIconSize(context),
           ),
           onPressed: () => Navigator.of(context).pop(),
         ),
+        elevation: 0,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            FireflyTheme.gradientText(
-              'Character Details',
-              gradient: FireflyTheme.eyesGradient,
-              style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-                letterSpacing: 1.2,
-              ),
-            ),
-            const SizedBox(height: 24),
-            Text(
-              'Welcome to ${character.name} detailed view!',
-              style: TextStyle(
-                color: FireflyTheme.white,
-                fontSize: 18,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
+      body: Padding(
+        padding: ResponsiveUtils.getStandardContainerPadding(context),
+        child: CharacterDetailContainer(character: character),
       ),
     );
   }

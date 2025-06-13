@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../screens/profile_edit_screen.dart';
 import '../../themes/firefly_theme.dart';
-import '../../screens/profile_edit/profile_edit_screen.dart';
+
 
 class EditProfileButton extends StatelessWidget {
   const EditProfileButton({super.key});

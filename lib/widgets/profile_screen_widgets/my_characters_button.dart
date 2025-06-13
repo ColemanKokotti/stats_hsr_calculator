@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../screens/my_characters_screen.dart';
 import '../../themes/firefly_theme.dart';
-import '../../screens/my_characters/my_characters_screen.dart';
+
 
 class MyCharactersButton extends StatelessWidget {
   const MyCharactersButton({super.key});

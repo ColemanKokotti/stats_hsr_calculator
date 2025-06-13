@@ -3,7 +3,7 @@ import 'package:help_project/screens/profile_screen.dart';
 import '../themes/firefly_theme.dart';
 import 'home_screen.dart';
 import 'stats_calculator_screen.dart';
-import 'stats_records_screen.dart';
+import 'event_version_screen.dart';
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});
@@ -18,7 +18,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
   static const List<Widget> _widgetOptions = [
     HomeScreen(),
     StatsCalculatorScreen(),
-    StatsRecordsScreen(),
+    EventVersionScreen(),
     ProfileScreen()
   ];
 
@@ -54,8 +54,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
               label: 'Calculator',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.history),
-              label: 'Records',
+              icon: Icon(Icons.event),
+              label: 'Events',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.people),

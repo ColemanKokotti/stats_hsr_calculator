@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import '../themes/firefly_theme.dart';
-import '../widgets/stats_records_widgets/stats_records_header.dart';
+import '../widgets/settings_widgets/settings_header.dart';
 import '../widgets/common_widgets/back_button_widget.dart';
 
-class StatsRecordsScreen extends StatelessWidget {
-  const StatsRecordsScreen({super.key});
+class SettingsScreen extends StatelessWidget {
+  const SettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class StatsRecordsScreen extends StatelessWidget {
         child: SafeArea(
           child: Stack(
             children: [
-              _buildStatsRecordsContent(context),
+              _buildSettingsContent(context),
               const BackButtonWidget(),
             ],
           ),
@@ -23,20 +23,20 @@ class StatsRecordsScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildStatsRecordsContent(BuildContext context) {
+  Widget _buildSettingsContent(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const SizedBox(height: 20),
-          const StatsRecordsHeader(),
+          const SettingsHeader(),
           const SizedBox(height: 40),
-          // TODO: Add stats records content here
+          // TODO: Add settings content here
           Expanded(
             child: Center(
               child: Text(
-                'Stats Records Content',
+                'Settings Content',
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   color: FireflyTheme.gold,
                 ),

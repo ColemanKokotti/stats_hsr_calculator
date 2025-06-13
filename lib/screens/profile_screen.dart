@@ -7,6 +7,7 @@ import '../widgets/profile_screen_widgets/profile_card.dart';
 import '../widgets/profile_screen_widgets/profile_header.dart';
 import '../widgets/profile_screen_widgets/logout_button.dart';
 import '../widgets/profile_screen_widgets/favorites_button.dart';
+import '../widgets/profile_screen_widgets/settings_button.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -31,6 +32,7 @@ class ProfileScreen extends StatelessWidget {
                 },
               ),
               const FavoritesButton(),
+              const SettingsButton(),
             ],
           ),
         ),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../screens/favorite_pg_screen.dart';
+import '../../screens/settings_screen.dart';
 import '../../themes/firefly_theme.dart';
 import '../../themes/responsive_utils.dart';
 
-class FavoritesButton extends StatelessWidget {
-  const FavoritesButton({super.key});
+class SettingsButton extends StatelessWidget {
+  const SettingsButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,15 +14,22 @@ class FavoritesButton extends StatelessWidget {
       tabletSize: 55,
       desktopSize: 60,
     );
+    
+    final iconSize = ResponsiveImageUtils.getResponsiveSize(
+      context,
+      mobileSize: 28,
+      tabletSize: 32,
+      desktopSize: 36,
+    );
 
     return Positioned(
       top: 20,
-      left: 20,
+      right: 20,
       child: GestureDetector(
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const FavoritePgScreen()),
+            MaterialPageRoute(builder: (context) => const SettingsScreen()),
           );
         },
         child: Container(
@@ -32,7 +39,7 @@ class FavoritesButton extends StatelessWidget {
             color: FireflyTheme.jacket.withOpacity(0.7),
             borderRadius: BorderRadius.circular(buttonSize / 2),
             border: Border.all(
-              color: FireflyTheme.turquoise.withOpacity(0.3),
+              color: FireflyTheme.gold.withOpacity(0.3),
               width: 1,
             ),
             boxShadow: [
@@ -49,24 +56,10 @@ class FavoritesButton extends StatelessWidget {
               ),
             ],
           ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(buttonSize / 2),
-            child: Image.asset(
-              'assets/images/like-firefly.gif',
-              fit: BoxFit.cover,
-              errorBuilder: (context, error, stackTrace) {
-                return Icon(
-                  Icons.favorite,
-                  color: FireflyTheme.turquoise,
-                  size: ResponsiveImageUtils.getResponsiveSize(
-                    context,
-                    mobileSize: 28,
-                    tabletSize: 32,
-                    desktopSize: 36,
-                  ),
-                );
-              },
-            ),
+          child: Icon(
+            Icons.settings,
+            color: FireflyTheme.gold,
+            size: iconSize,
           ),
         ),
       ),

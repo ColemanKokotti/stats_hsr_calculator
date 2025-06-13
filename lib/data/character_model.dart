@@ -4,6 +4,7 @@ class Character {
   final String name;
   final String imageUrl;  // Per l'icon
   final String portrait;  // Per il portrait
+  final String ingamePortrait;  // Per il ritratto in-game
   final String pathImage;
   final String pathName;
   final String element;
@@ -16,6 +17,7 @@ class Character {
     required this.name,
     required this.imageUrl,
     required this.portrait,
+    required this.ingamePortrait,
     required this.pathImage,
     required this.pathName,
     required this.element,
@@ -29,6 +31,7 @@ class Character {
     String? name,
     String? imageUrl,
     String? portrait,
+    String? ingamePortrait,
     String? pathImage,
     String? pathName,
     String? element,
@@ -41,6 +44,7 @@ class Character {
       name: name ?? this.name,
       imageUrl: imageUrl ?? this.imageUrl,
       portrait: portrait ?? this.portrait,
+      ingamePortrait: ingamePortrait ?? this.ingamePortrait,
       pathImage: pathImage ?? this.pathImage,
       pathName: pathName ?? this.pathName,
       element: element ?? this.element,
@@ -56,6 +60,7 @@ class Character {
       name: json['name'] ?? '',
       imageUrl: json['icon'] ?? '',  // Icon per CharacterIconWidget
       portrait: json['portrait'] ?? '',  // Portrait per CharacterPortraitWidget
+      ingamePortrait: json['ingame_portrait'] ?? '',  // In-game portrait
       pathImage: '', // Non abbiamo path image nel nuovo JSON
       pathName: json['path'] ?? '',
       element: json['element'] ?? '',
@@ -71,6 +76,7 @@ class Character {
       'name': name,
       'icon': imageUrl,
       'portrait': portrait,
+      'ingame_portrait': ingamePortrait,
       'pathImage': pathImage,
       'path': pathName,
       'element': element,
@@ -91,6 +97,6 @@ class Character {
 
   @override
   String toString() {
-    return 'Character(id: $id, name: $name, pathName: $pathName, element: $element, rarity: $rarity, faction: $faction, isFavorite: $isFavorite)';
+    return 'Character(id: $id, name: $name, pathName: $pathName, element: $element, rarity: $rarity, faction: $faction, isFavorite: $isFavorite, ingamePortrait: $ingamePortrait)';
   }
 }

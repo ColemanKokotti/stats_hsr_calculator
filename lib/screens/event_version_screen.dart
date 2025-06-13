@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../themes/firefly_theme.dart';
-import '../themes/responsive_utils.dart';
+import '../widgets/calendar_widgets/weekly_calendar_widget.dart';
+import '../widgets/event_screen_widgets/event_header_widget.dart';
 
 class EventVersionScreen extends StatelessWidget {
   const EventVersionScreen({super.key});
@@ -8,13 +9,18 @@ class EventVersionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: FireflyTheme.jacket,
-      body: Center(
-        child: Text(
-          'Event Version Screen',
-          style: ResponsiveTextUtils.getHeadlineMediumStyle(
-            context,
-            color: FireflyTheme.gold,
+      body: Container(
+        decoration: BoxDecoration(gradient: FireflyTheme.backgroundGradient),
+        child: const SafeArea(
+          child: Column(
+            children: [
+              EventHeaderWidget(),
+              SizedBox(height: 16),
+              WeeklyCalendarWidget(),
+              Expanded(
+                child: SizedBox(), // Spazio per altri contenuti futuri
+              ),
+            ],
           ),
         ),
       ),

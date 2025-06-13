@@ -18,23 +18,27 @@ class CharacterSelectionView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child:Column(
-      children: [
-        Row(children: [
-          const CharacterCollectionHeader(),
-          const Spacer(),
-          SaveCollectionButton(selectedCharacterIds: selectedCharacterIds),
-        ],),
-        Expanded(
-          child: CharacterSelectionGrid(
-            characters: allCharacters,
-            selectedCharacterIds: selectedCharacterIds,
-            onToggleSelection: (characterId) {
-              context.read<MyCharactersCubit>().toggleCharacterSelection(characterId);
-            },
+    return SafeArea(
+      child: Column(
+        children: [
+          Row(
+            children: [
+              const CharacterCollectionHeader(),
+              const Spacer(),
+              SaveCollectionButton(selectedCharacterIds: selectedCharacterIds),
+            ],
           ),
-        ),
-      ],
-    ),) ;
+          Flexible(
+            child: CharacterSelectionGrid(
+              characters: allCharacters,
+              selectedCharacterIds: selectedCharacterIds,
+              onToggleSelection: (characterId) {
+                context.read<MyCharactersCubit>().toggleCharacterSelection(characterId);
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

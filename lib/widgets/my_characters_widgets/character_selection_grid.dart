@@ -26,7 +26,7 @@ class CharacterSelectionGrid extends StatelessWidget {
         if (state is MyCharactersLoaded) {
           return Column(
             children: [
-              Expanded(
+              Flexible(
                 child: _buildMangaStylePage(context, state),
               ),
               const SizedBox(height: 8),
@@ -77,8 +77,9 @@ class CharacterSelectionGrid extends StatelessWidget {
             
             // Characters grid
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 36.0),
               child: GridView.builder(
+                shrinkWrap: true,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   crossAxisSpacing: 15,
@@ -94,7 +95,7 @@ class CharacterSelectionGrid extends StatelessWidget {
                 },
               ),
             ),
-            
+
             // Page number indicator
             Positioned(
               bottom: 8,

@@ -8,7 +8,7 @@ import '../../bloc/MyCharacters_Cubit/my_characters_list_state.dart';
 
 
 class MyCharactersList extends StatelessWidget {
-  final List<String> selectedCharacterIds;
+  final Set<String> selectedCharacterIds;
   final VoidCallback onAddCharacter;
 
   const MyCharactersList({
@@ -20,7 +20,7 @@ class MyCharactersList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => MyCharactersListCubit()..loadMyCharacters(selectedCharacterIds),
+      create: (context) => MyCharactersListCubit()..loadMyCharacters(selectedCharacterIds.toList()),
       child: _MyCharactersListContent(
         selectedCharacterIds: selectedCharacterIds,
         onAddCharacter: onAddCharacter,
@@ -30,7 +30,7 @@ class MyCharactersList extends StatelessWidget {
 }
 
 class _MyCharactersListContent extends StatelessWidget {
-  final List<String> selectedCharacterIds;
+  final Set<String> selectedCharacterIds;
   final VoidCallback onAddCharacter;
 
   const _MyCharactersListContent({
@@ -54,8 +54,8 @@ class _MyCharactersListContent extends StatelessWidget {
       builder: (context, state) {
         // When selectedCharacterIds changes, reload the characters
         if (state is MyCharactersListLoaded && 
-            !_areListsEqual(selectedCharacterIds, state.myCharacters.map((c) => c.id).toList())) {
-          context.read<MyCharactersListCubit>().loadMyCharacters(selectedCharacterIds);
+            !_areListsEqual(selectedCharacterIds.toList(), state.myCharacters.map((c) => c.id).toList())) {
+          context.read<MyCharactersListCubit>().loadMyCharacters(selectedCharacterIds.toList());
         }
 
         return Padding(

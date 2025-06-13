@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../bloc/MyCharacters_Cubit/my_characters_cubit.dart';
-import '../../bloc/MyCharacters_Cubit/my_characters_state.dart';
-import '../../models/character.dart';
+import '../../data/character_model.dart';
 import 'character_collection_header.dart';
 import 'character_selection_grid.dart';
 import 'save_collection_button.dart';

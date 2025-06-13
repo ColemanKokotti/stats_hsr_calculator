@@ -9,7 +9,7 @@ import 'my_character_image.dart';
 
 class CharacterSelectionGrid extends StatelessWidget {
   final List<Character> characters;
-  final List<String> selectedCharacterIds;
+  final Set<String> selectedCharacterIds;
   final Function(String) onToggleSelection;
 
   const CharacterSelectionGrid({

@@ -22,7 +22,7 @@ class MyCharactersCubit extends Cubit<MyCharactersState> {
       
       emit(MyCharactersLoaded(
         allCharacters: allCharacters,
-        selectedCharacterIds: selectedCharacterIds,
+        selectedCharacterIds: selectedCharacterIds.toSet(),
         isFirstVisit: isFirstVisit,
       ));
     } catch (e) {
@@ -33,7 +33,7 @@ class MyCharactersCubit extends Cubit<MyCharactersState> {
   void toggleCharacterSelection(String characterId) {
     final currentState = state;
     if (currentState is MyCharactersLoaded) {
-      final selectedIds = List<String>.from(currentState.selectedCharacterIds);
+      final selectedIds = Set<String>.from(currentState.selectedCharacterIds);
       
       if (selectedIds.contains(characterId)) {
         selectedIds.remove(characterId);
@@ -91,7 +91,7 @@ class MyCharactersCubit extends Cubit<MyCharactersState> {
         if (user != null) {
           await FirebaseMyCharactersService.saveMyCharacters(
             user.uid, 
-            currentState.selectedCharacterIds
+            currentState.selectedCharacterIds.toList()
           );
           await FirebaseMyCharactersService.markCurrentUserMyCharactersScreenAsVisited();
           

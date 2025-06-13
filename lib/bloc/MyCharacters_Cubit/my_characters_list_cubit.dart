@@ -34,7 +34,7 @@ class MyCharactersListCubit extends Cubit<MyCharactersListState> {
     final results = await Future.wait(futures);
     // Filter out nulls and cast to List<Character>
     return results
-        .where((character) => character != null)
+        .where((character) => character != character)
         .map((character) => character)
         .toList();
   }

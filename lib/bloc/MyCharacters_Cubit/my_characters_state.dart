@@ -18,7 +18,7 @@ class MyCharactersLoading extends MyCharactersState {
 
 class MyCharactersLoaded extends MyCharactersState {
   final List<Character> allCharacters;
-  final List<String> selectedCharacterIds;
+  final Set<String> selectedCharacterIds;
   final bool isFirstVisit;
   final int currentPage;
   final int charactersPerPage;
@@ -51,7 +51,7 @@ class MyCharactersLoaded extends MyCharactersState {
 
   MyCharactersLoaded copyWith({
     List<Character>? allCharacters,
-    List<String>? selectedCharacterIds,
+    Set<String>? selectedCharacterIds,
     bool? isFirstVisit,
     int? currentPage,
     int? charactersPerPage,
